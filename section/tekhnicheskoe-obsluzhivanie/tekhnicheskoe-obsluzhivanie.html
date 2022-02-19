@@ -1,0 +1,1477 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Техническое обслуживание</title>
+  <link rel="stylesheet" type="text/css" href="../../style/styles.css">
+  <link rel="stylesheet" type="text/css" href="../../style/style_tekhnicheskoe-obsluzhivanie.css">
+
+  <script src="../../js/jquery.js"></script>
+  <script src="../../js/jqueryscrollto.js"></script>
+  <script src="../../js/script.js"></script>
+  <script src="jsScript.js"></script>
+  <title>Расстояние между строками</title>
+  <style>
+   h1 {
+    margin-bottom: 0px; /* Отрицательный отступ между заголовком и текстом */
+   }
+  </style>
+</head>
+<body id = 'top'>
+<div id = 'v_nachalo'></div>
+<div id='polosa'></div>
+  <div class="mainBlock">
+    <div class="header">
+    <a id ="logo" href="../../Index.html"></a>
+      <div id="search">
+        <div id='secondSearch'>
+          <div id="searchButton"></div>
+            <input id="searchText" type="text" name="search" value="Поиск по разделу" onblur="if (this.value=='') this.value='Поиск по разделу';" onfocus="if (this.value=='Поиск по разделу') this.value='';"/>
+            <div id="prev_search"></div>
+            <div id="next_search"></div>
+            <div id="countFound"></div>
+            <p id="back-top">
+              <a href="#top"><span></span>Вверх</a>
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <div class="inlandSideBarMaintenance">      
+      <ul>
+        <li>
+          <div id="inlandMenu">
+            <b><a href="#CommonRules">Общие указания</a></b>
+          </div>
+        </li>
+        <li>
+          <div id="inlandMenu">
+            <b><a href="#SecurityMeasures">Меры безопасности</a></b>
+          </div>
+        </li>
+        <li>
+          <div id="inlandMenu">
+            <b><a href="#courseObsl">Порядок технического обслуживания</a></b>
+          </div>
+            <ul>
+              <li><a href="#WorksList">Перечень работ по техническому обслуживанию</a></li>
+              <li><a href="#DevicesList">Перечень приборов, инструмента, приспособлений и материалов, применяемых при техническом обслуживании, консервации и расконсервации</a></li>
+              <li id='mk'><a href="#techniques">Методики проведения технического обслуживания</li></a>
+              <ul id="lastPt">
+                <li><a href="#obslKontrIzm">Техническое обслуживание контрольно-измерительных приборов</li></a>
+                <li><a href="#instructionsSmazka">Указания по смазке</a></li>
+                <li><a href="#instructionsSoed">Указания по работе с кабельными соединителями</a></li>
+                <li><a href="#obslKPA81">Проведение технического обслуживания №2 КПА 9В981</a></li>
+                <li><a href="#obslElectrostation">Техническое обслуживание электроустановки</a></li>
+              </ul>
+            </ul>  
+        </li>
+        <li>
+          <div id="inlandMenu">
+            <b><a href="#CheckEfficiency">Проверка работоспособности КПМ</a></b>
+          </div>
+        </li>
+        <li>
+          <div id="inlandMenu">
+            <b><a href="#CheckWork">Методики проверок работоспособности КПМ</a></b>
+          </div>
+          <ul>
+            <li><a href="#CheckResist">Проверка сопротивления изоляции</a></li>
+            <li><a href="#CheckFVUA">Проверка производительности ФВУА</a></li>
+            <li><a href="#CheckSaelant">Проверка герметичности кузова</a></li>
+            <li><a href="#CheckBPZE">Проверка работы защитно-отключающего устройства БПЗЭ</a></li>
+          </ul>
+        </li>
+        <li>
+          <div id="inlandMenu">
+            <b><a href="#TechSvidetel">Техническое освидетельствование</a></b>
+          </div>
+          <ul>
+            <li><a href="#CheckMeasure">Поверка средств измерений</a></li>
+            <li><a href="#CheckExtinguisher">Техническое освидетельствование огнетушителя ОУ&ndash;3</a></li>
+            <li><a href="#CheckProtection">Освидетельствование защитных средств</a></li>
+            <li><a href="#MethodPassport">Порядок паспортизации КПМ по истечении гарантийного срока</a></li>
+          </ul>
+        </li>
+        <li>
+        <div id="inlandMenu">
+            <b><a href="#Conservation">Консервация (расконсервация, переконсервация)</a></b>
+          </div>
+          <ul>
+            <li><a href="#ConservationKPM">Консервация КПМ</a></li>
+            <li><a href="#DegreasingKPM">Расконсервация КПМ</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sidebar">
+      <div class="menu">
+        <ul>
+        <li>
+          <div class="Menu">
+            <a href='section/opisanie-i-rabota/opisanie-i-rabota.html'>
+              <i style="background-position: -13px 0"></i>Описание и работа КПМ
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="Menu">
+            <a href='section/ispolzovanie-kpm/ispolzovanie-kpm.html'>
+              <i style="background-position: -26px 0"></i>Использование КПМ</a>
+          </div>
+        </li>
+        <li>
+          <div class="Menu">
+            <a href='section/tekhnicheskoe-obsluzhivanie/tekhnicheskoe-obsluzhivanie.html'>
+              <i style="background-position: -39px 0"></i>Техническое обслуживание</a>
+          </div>
+        </li>
+        <li>
+          <div class="Menu">
+            <a href='section/tekushchiy-remont-kpm/tekushchiy-remont-kpm.html'>
+              <i style="background-position: -52px 0"></i>Текущий ремонт КПМ</a>
+          </div>
+        </li>
+        <li>
+          <div class="Menu">
+            <a href='section/khranenie-kpm/khranenie-kpm.html'>
+              <i style="background-position: -65px 0"></i>Хранение КПМ</a>
+          </div>
+        </li>
+        <li>
+          <div class="Menu">
+            <a href='section/transportirovanie-kpm/transportirovanie-kpm.html'>
+              <i style="background-position: -78px 0"></i>Транспортирование КПМ</a>
+          </div>
+        </li>
+        <li>
+          <div class="Menu">
+            <a href='section/utilizatsiya-kpm/utilizatsiya-kpm.html'>
+              <i style="background-position: -91px 0"></i>Утилизация КПМ</a>
+          </div>
+        </li>
+        <li>
+          <div id="perSokr">
+            <i style="background-position: -104px 0"></i>Перечень сокращений
+          </div>
+        </li>
+      </ul>
+      </div>
+    </div>
+
+<div class="content">
+<div id="alltext">
+
+<p id="CommonRules" class='titles'><b>Общие указания</b>
+
+<p>Техническое обслуживание КПМ призвано обеспечить постоянную ее готовность к эксплуатации и безотказность в работе.</p>
+
+<p>При техническом обслуживании КПМ должны применяться штатные исправные инструмент и принадлежности, а также об&shy;ти&shy;роч&shy;ные, смазочные и другие эксплуатационные материалы, предусмотренные настоящим руководством по эксплуатации.</p>
+
+<p>В за&shy;ви&shy;си&shy;мо&shy;сти от из&shy;но&shy;шен&shy;но&shy;сти ап&shy;па&shy;ра&shy;ту&shy;ры и обо&shy;ру&shy;до&shy;ва&shy;ния КПМ, кли&shy;ма&shy;ти&shy;че&shy;ских усло&shy;вий, в ко&shy;то&shy;рых экс&shy;плу&shy;а&shy;ти&shy;ру&shy;ет&shy;ся КПМ (ра&shy;бо&shy;та в сре&shy;де с по&shy;вы&shy;шен&shy;ной влаж&shy;но&shy;стью, за&shy;пы&shy;лен&shy;ным воз&shy;ду&shy;хом и т.д.), сро&shy;ки меж&shy;ду про&shy;ве&shy;де&shy;ни&shy;ем от&shy;дель&shy;ных тех&shy;ни&shy;че&shy;ских об&shy;слу&shy;жи&shy;ва&shy;ний мо&shy;гут из&shy;ме&shy;нять&shy;ся (в сто&shy;ро&shy;ну со&shy;кра&shy;ще&shy;ния) по ре&shy;ше&shy;нию ко&shy;ман&shy;ди&shy;ра ча&shy;сти (под&shy;раз&shy;де&shy;ле&shy;ния).</p>
+
+<p class="dline">Для подготовки к техническому обслуживанию произвести:</p>
+
+&ndash; расконсервацию КПМ в соответствии с пунктом <a href="#DegreasingKPM">&laquo;расконсервация КПМ&raquo;,</a> если КПМ была законсервирована;<br>&ndash; общую чистку и мойку КПМ;<br>&ndash; при необходимости дезактивацию КПМ с привлечением специалистов химслужбы части.</p>
+
+<p class="dline">После технического обслуживания выявленные неисправности и недостатки КПМ и ее составных частей должны быть устранены.</p>
+
+<p>Для КПМ, находящейся в эксплуатации, установлены следующие виды технического обслуживания:</p>
+
+&ndash; контрольный осмотр (КО);<br>&ndash; ежедневное техническое обслуживание (ЕТО);<br>&ndash; техническое обслуживание №1 (ТО-1);<br>&ndash; техническое обслуживание №2 (ТО-2);<br>&ndash; сезонное обслуживание (СО).</p>
+
+
+<p class="dline">КО проводится:</p>
+
+&ndash; перед выездом из парка;<br>&ndash; на марше (на привалах и остановках);<br>&ndash; перед использованием КПМ.</p>
+
+<p>ЕТО проводится после использования КПМ (работа, учения), после марша, но не реже одного раза в две недели, если КПМ не использовалась.</p>
+
+<p>ЕТО проводится расчетом КПМ в предусмотренные распорядком дня подразделения часы ухода за техникой.</p>
+
+<p>ТО-1 про&shy;во&shy;дит&shy;ся не ре&shy;же од&shy;но&shy;го ра&shy;за в год, а так&shy;же пе&shy;ред по&shy;ста&shy;нов&shy;кой КПМ на крат&shy;ко&shy;вре&shy;мен&shy;ное хра&shy;не&shy;ние. Кро&shy;ме то&shy;го, ТО-1 про&shy;во&shy;дит&shy;ся по&shy;сле про&shy;бе&shy;га ав&shy;то&shy;мо&shy;би&shy;ля со&shy;глас&shy;но его ру&shy;ко&shy;вод&shy;ству по экс&shy;плу&shy;а&shy;та&shy;ции. ТО-1 элек&shy;тро&shy;уста&shy;нов&shy;ки про&shy;во&shy;дит&shy;ся че&shy;рез каж&shy;дые 100 ч ра&shy;бо&shy;ты ге&shy;не&shy;ра&shy;то&shy;ра.</p>
+
+<p>ТО-1 проводится силами расчета с использованием приборов и оборудования КПМ.</p>
+
+<p>ТО-2 про&shy;во&shy;дит&shy;ся не ре&shy;же од&shy;но&shy;го ра&shy;за в два го&shy;да, а так&shy;же пе&shy;ред по&shy;ста&shy;нов&shy;кой КПМ на дли&shy;тель&shy;ное хра&shy;не&shy;ние. Кро&shy;ме то&shy;го, ТО-2 про&shy;во&shy;дит&shy;ся по&shy;сле про&shy;бе&shy;га ав&shy;то&shy;мо&shy;би&shy;ля со&shy;глас&shy;но его ру&shy;ко&shy;вод&shy;ству по экс&shy;плу&shy;а&shy;та&shy;ции. За&shy;ме&shy;на мас&shy;ла в кор&shy;пу&shy;се ре&shy;дук&shy;то&shy;ра ЭУ про&shy;во&shy;дит&shy;ся че&shy;рез 500 ч ра&shy;бо&shy;ты элек&shy;тро&shy;уста&shy;нов&shy;ки, но не ре&shy;же од&shy;но&shy;го ра&shy;за в 5 лет. ТО-2 элек&shy;тро&shy;уста&shy;нов&shy;ки про&shy;во&shy;дит&shy;ся че&shy;рез каж&shy;дые 500 ч ра&shy;бо&shy;ты ге&shy;не&shy;ра&shy;то&shy;ра.</p>
+
+<p>ТО-2 проводится силами расчета КПМ с привлечением специалистов ремонтных органов.</p>
+
+<p>При учете пробега КПМ необходимо учитывать время работы электроустановки по счетчику моточасов на щитке переключения, считая 1 ч работы электроустановки эквивалентным 25 км пробега автомобиля.</p>
+
+<p>СО проводится два раза в год (весной и осенью) и совмещается с очередным техническим обслуживанием. СО проводится рас&shy;че&shy;том КПМ с привлечением персонала ремонтных подразделений части.</p>
+
+<p class="dline">Для КПМ, находящейся на хранении, установлены следующие виды технического обслуживания:</p>
+
+&ndash; техническое обслуживание №1 (ТО-1х);<br>&ndash; техническое обслуживание №2 (ТО-2х).</p>
+
+<p>ТО-1х проводится один раз в 6 месяцев при кратковременном хранении КПМ и один раз в год при длительном хранении КПМ.</p>
+
+<p>ТО-2х проводится один раз в 2 года при длительном хранении КПМ.</p>
+
+<p>При проведении ТО-1, ТО-2, ТО-1х, ТО-2х ОБЯЗАТЕЛЬНО заполнение формуляра КПМ.</p>
+
+<p>Пе&shy;ре&shy;чень ос&shy;нов&shy;ных и дуб&shy;ли&shy;ру&shy;ю&shy;щих (ре&shy;зерв&shy;ных) ГСМ, при&shy;ме&shy;ня&shy;е&shy;мых при тех&shy;ни&shy;че&shy;ских об&shy;слу&shy;жи&shy;ва&shy;ни&shy;ях, при&shy;ве&shy;де&shy;ны в экс&shy;плу&shy;а&shy;та&shy;ци&shy;он&shy;ной до&shy;ку&shy;мен&shy;та&shy;ции на ав&shy;то&shy;мо&shy;биль КАМАЗ–5350, ку&shy;зов К5350, уста&shy;нов&shy;ку ОВ95, ге&shy;не&shy;ра&shy;тор элек&shy;тро&shy;уста&shy;нов&shy;ки.</p>
+
+
+<p id="SecurityMeasures" class='titles'><b>Меры безопасности</b></p>
+
+<p>При проведении технического обслуживания КПМ необходимо строго соблюдать все указания по мерам безопасности, из&shy;ло&shy;жен&shy;ные в раз&shy;де&shy;ле  &laquo;Использование КПМ&raquo;.</p>
+
+<p id="courseObsl" class='titles'><b>Порядок технического обслуживания</b></p>
+
+<p id="WorksList" class='firstsubtitles'>Перечень работ по техническому обслуживанию</p>
+
+<p>Перечень работ при различных видах технического обслуживания приведен в таблице 5.</p>
+
+<p class="table855">Таблица 5</p>
+<table>
+<tbody>
+  <tr>
+    <th id="oneColoumn" rowspan="2">Наименование объекта технического обслуживания и работы</th>
+    <th id="twoColoumn" colspan='7'>Вид технического обслуживания</th>
+  </tr>
+  <tr>
+    <th id="twoColoumn">КО</th>
+    <th id="threeColoumn">ЕТО</th>
+    <th id="fourColoumn">ТО-1</th>
+    <th id="fiveColoumn">ТО-2</th>
+    <th id="sixColoumn">СО</th>
+    <th id="sevenColoumn">ТО-1х</th>
+    <th id="eightColoumn">ТО-2х</th>
+  </tr>
+  <tr>
+    <td id="oneColoumnTable5">Подготовка КПМ к проведению технического об&shy;слу&shy;жи&shy;ва&shy;ния:
+<br>&ndash; удаление пыли и грязи из тумбочек, ящиков, <br>с панелей;<br>&ndash; чистка и сушка чехлов, футляров, сумок, укла&shy;доч&shy;ных ящиков;<br>&ndash; влаж&shy;ная убор&shy;ка на&shy;руж&shy;ной и внут&shy;рен&shy;ней по&shy;верх&shy;но&shy;стей ку&shy;зо&shy;ва, а так&shy;же про&shy;тир&shy;ка ап&shy;па&shy;ра&shy;ту&shy;ры, обо&shy;ру&shy;до&shy;ва&shy;ния, пла&shy;фо&shy;нов, сте&shy;кол окон</td>
+    <td id="twoColoumn" valign="top"><p class="dline">&minus;</p></td>
+    <td id="threeColoumn" valign="top"><p class="dline">+</p></td>
+    <td id="fourColoumn" valign="top"><p class="dline">+</p></td>
+    <td id="fiveColoumn" valign="top"><p class="dline">+</p></td>
+    <td id="sixColoumn" valign="top"><p class="dline">&minus;</p></td>
+    <td id="sevenColoumn" valign="top"><p class="dline">+</p></td>
+    <td id="eightColoumn" valign="top"><p class="dline">+</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Проверка крепления специальной КПА, стандартной КИП, ЗИП и оборудования КПМ</td>
+    <td id="twoColoumn">+</td>
+    <td id="threeColoumn">&minus;</td>
+    <td id="fourColoumn">&minus;</td>
+    <td id="fiveColoumn">&minus;</td>
+    <td id="sixColoumn">&minus;</td>
+    <td id="sevenColoumn">&minus;</td>
+    <td id="eightColoumn">&minus;</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>Автомобиль КАМАЗ&ndash;5350</b>
+<br>Техническое обслуживание согласно разделам &laquo;Периодичность технического обслуживания&raquo; (приложение 9), &laquo;Транспортирование <br>и хранение автомобилей&raquo; руководства <br>по устройству, эксплуатации, техническому обслуживанию и ремонту автомобиля в объеме:
+<br>&ndash; ежедневного технического обслуживания <br>в ос&shy;нов&shy;ной период эксплуатации;<br>&ndash; периодического технического обслуживания <br>в основной период эксплуатации;<br>&ndash; сезонного технического обслуживания <br>в основной период эксплуатации;<br>&ndash; ежемесячного технического обслуживания при хранении;<br>&ndash; полугодового технического обслуживания при хранении;<br>&ndash; годового технического об&shy;слу&shy;жи&shy;ва&shy;ния при хранении;<br>&ndash; регламентированного технического об&shy;слу&shy;жи&shy;ва&shy;ния через 5&ndash;6 лет хранения</td>
+    <td id="twoColoumn"><br><br><br><br><br><br><br>+<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;</td>
+    <td id="threeColoumn"><br><br><br><br><br><br><br>+<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;</td>
+    <td id="fourColoumn"><br><br><br><br><br><br><br>&minus;<br><br>+<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;</td>
+    <td id="fiveColoumn"><br><br><br><br><br><br><br>&minus;<br><br>+<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;</td>
+    <td id="sixColoumn"><br><br><br><br><br><br><br>&minus;<br><br>&minus;<br><br>+<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;</td>
+    <td id="sevenColoumn"><br><br><br><br><br><br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>+<br><br>+<br><br>+<br><br>&minus;</td>
+    <td id="eightColoumn"><br><br><br><br><br><br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>+<br><br>+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>Кузов-фургон К5350</b>
+<br>Техническое обслуживание согласно разделу &laquo;Техническое обслуживание&raquo; руководства по эксплуатации кузова (кроме технического об-служивания установки ОВ95) в объеме:
+<br>&ndash; ежедневного технического обслуживания;<br>&ndash; технического обслуживания &#8470;1;<br>&ndash; технического обслуживания &#8470;2;<br>&ndash; сезонного технического обслуживания</td>
+    <td id="twoColoumn"><br><br><br><br><br>+<br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="threeColoumn"><br><br><br><br><br>+<br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="fourColoumn"><br><br><br><br><br>&minus;<br>+<br>&minus;<br>&minus;</td>
+    <td id="fiveColoumn"><br><br><br><br><br>&minus;<br>&minus;<br>+<br>&minus;</td>
+    <td id="sixColoumn"><br><br><br><br><br>&minus;<br>&minus;<br>&minus;<br>+</td>
+    <td id="sevenColoumn"><br><br><br><br><br>&minus;<br>+<br>&minus;<br>&minus;</td>
+    <td id="eightColoumn"><br><br><br><br><br>&minus;<br>&minus;<br>+<br>&minus;</td>
+  </tr>
+
+  <tr>
+   <td id="oneColoumnTable5"><b>Установка ОВ95</b>
+<br>Техническое обслуживание согласно разделу &laquo;Техническое обслуживание&raquo; руководства по эксплуатации установки ОВ95 в объеме:
+<br>&ndash; через 100 ч работы;<br>&ndash; через 500 ч работы;<br>&ndash; через 1000 ч работы;<br>&ndash; сезонного технического обслуживания</td>
+    <td id="twoColoumn"><br><br><br><br>&minus;<br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="threeColoumn"><br><br><br><br>+<br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="fourColoumn"><br><br><br><br>&minus;<br>+<br>&minus;<br>&minus;</td>
+    <td id="fiveColoumn"><br><br><br><br>&minus;<br>&minus;<br>+<br>&minus;</td>
+    <td id="sixColoumn"><br><br><br><br>&minus;<br>&minus;<br>&minus;<br>+</td>
+    <td id="sevenColoumn"><br><br><br><br>&minus;<br>+<br>&minus;<br>&minus;</td>
+    <td id="eightColoumn"><br><br><br><br>&minus;<br>&minus;<br>+<br>&minus;</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>Кондиционер</b>
+<br>Техническое обслуживание согласно разделу &laquo;Инструкция по регламенту&raquo; руководства по эксплуатации кондиционера в объеме:
+<br>&ndash; еженедельного регламентного технического обслуживания;<br>&ndash; годового регламентного технического об&shy;слу&shy;жи&shy;ва&shy;ния</td>
+    <td id="twoColoumn"><br><br><br>&minus;<br><br>&minus;</td>
+    <td id="threeColoumn"><br><br><br>+<br><br>&minus;</td>
+    <td id="fourColoumn"><br><br><br>+<br><br>+</td>
+    <td id="fiveColoumn"><br><br><br>+<br><br>+</td>
+    <td id="sixColoumn"><br><br><br>&minus;<br><br>&minus;</td>
+    <td id="sevenColoumn"><br><br><br>+<br><br>+</td>
+    <td id="eightColoumn"><br><br><br>+<br><br>+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Техническое обслуживание электроустановки в соответствии с пунктом <a href="#obslElectrostation">&laquo;техническое об&shy;слу&shy;жи&shy;ва&shy;ние электроустановки&raquo;</a> в объеме:
+<br>&ndash; КО;<br>&ndash; ЕТО;<br>&ndash; ТО-1;<br>&ndash; ТО-2;<br>&ndash; СО</td>
+    <td id="twoColoumn"><br><br><br>+<br>&minus;<br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="threeColoumn"><br><br><br>&minus;<br>+<br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="fourColoumn"><br><br><br>&minus;<br>&minus;<br>+<br>&minus;<br>&minus;</td>
+    <td id="fiveColoumn"><br><br><br>&minus;<br>&minus;<br>&minus;<br>+<br>&minus;</td>
+    <td id="sixColoumn"><br><br><br>&minus;<br>&minus;<br>&minus;<br>&minus;<br>+</td>
+    <td id="sevenColoumn"><br><br><br>&minus;<br>&minus;<br>+<br>&minus;<br>&minus;</td>
+    <td id="eightColoumn"><br><br><br>&minus;<br>&minus;<br>&minus;<br>+<br>&minus;</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Проверка работы защитно-отключающего устройства БПЗЭ согласно пункту <a href="#CheckBPZE">&laquo;проверка работы защитно-отключающего устройства БПЗЭ&raquo;</a></td>
+    <td id="twoColoumn">&minus;</td>
+    <td id="threeColoumn">+</td>
+    <td id="fourColoumn">+</td>
+    <td id="fiveColoumn">+</td>
+    <td id="sixColoumn">&minus;</td>
+    <td id="sevenColoumn">+</td>
+    <td id="eightColoumn">+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Про&shy;вер&shy;ка осве&shy;ще&shy;ния и све&shy;то&shy;мас&shy;ки&shy;ров&shy;ки КПМ со&shy;глас&shy;но пунк&shy;ту &laquo;вклю&shy;че&shy;ние осве&shy;ще&shy;ния и све&shy;то&shy;мас&shy;ки&shy;ров&shy;ки&raquo; раз&shy;де&shy;ла &laquo;Ис&shy;поль&shy;зо&shy;ва&shy;ние КПМ&raquo;</td>
+    <td id="twoColoumn">&minus;</td>
+    <td id="threeColoumn">+</td>
+    <td id="fourColoumn">+</td>
+    <td id="fiveColoumn">+</td>
+    <td id="sixColoumn">&minus;</td>
+    <td id="sevenColoumn">+</td>
+    <td id="eightColoumn">+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Проверка сопротивления изоляции согласно пункту <a href="#CheckResist">&laquo;проверка сопротивления изоляции&raquo;</a></td>
+    <td id="twoColoumn">&minus;</td>
+    <td id="threeColoumn">&minus;</td>
+    <td id="fourColoumn">+</td>
+    <td id="fiveColoumn">+</td>
+    <td id="sixColoumn">&minus;</td>
+    <td id="sevenColoumn">+</td>
+    <td id="eightColoumn">+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>Прибор ИМД-21Б</b>
+<br>Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние со&shy;глас&shy;но раз&shy;де&shy;лу «Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние» тех&shy;ни&shy;че&shy;ско&shy;го опи&shy;са&shy;ния и ин&shy;струк&shy;ции по экс&shy;плу&shy;а&shy;та&shy;ции из&shy;ме&shy;ри&shy;те&shy;ля в объ&shy;е&shy;ме:
+<br>&ndash; КО;<br>&ndash; ЕТО;<br>&ndash; ТО-1;<br>&ndash; ТО-1х</td>
+    <td id="twoColoumn"><br><br><br><br><br>+<br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="threeColoumn"><br><br><br><br><br>&minus;<br>+<br>&minus;<br>&minus;</td>
+    <td id="fourColoumn"><br><br><br><br><br>&minus;<br>&minus;<br>+<br>&minus;</td>
+    <td id="fiveColoumn"><br><br><br><br><br>&minus;<br>&minus;<br>+<br>&minus;</td>
+    <td id="sixColoumn"><br><br><br><br><br>&minus;<br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="sevenColoumn"><br><br><br><br><br>&minus;<br>&minus;<br>&minus;<br>+</td>
+    <td id="eightColoumn"><br><br><br><br><br>&minus;<br>&minus;<br>&minus;<br>&minus;</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>БКСО</b>
+<br>Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние со&shy;глас&shy;но раз&shy;де&shy;лу «Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние» пас&shy;пор&shy;та ком&shy;плек&shy;та в объ&shy;е&shy;ме: 
+<br>&ndash; КО;<br>&ndash; ежедневного технического обслуживания;<br>&ndash; ТО-1;<br>&ndash; техническое обслуживание КИП согласно пункту <a href="#obslKontrIzm">&laquo;техническое обслуживание кон&shy;троль&shy;но-измерительных приборов&raquo;</a></td>
+    <td id="twoColoumn" valign="top"><br><br><br><br>+<br>&minus;<br>&minus;<br><br>&minus;</td>
+    <td id="threeColoumn" valign="top"><br><br><br><br>+<br>&minus;<br>&minus;<br><br>&minus;</td>
+    <td id="fourColoumn" valign="top"><br><br><br><br>&minus;<br>+<br>&minus;<br><br>+</td>
+    <td id="fiveColoumn" valign="top"><br><br><br><br>&minus;<br>&minus;<br>+<br><br>+</td>
+    <td id="sixColoumn" valign="top"><br><br><br><br>&minus;<br>&minus;<br>&minus;<br><br>&minus;</td>
+    <td id="sevenColoumn" valign="top"><br><br><br><br>&minus;<br>&minus;<br>&minus;<br><br>+</td>
+    <td id="eightColoumn" valign="top"><br><br><br><br>&minus;<br>&minus;<br>+<br><br>+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>КПА 9В981</b>
+<p class="dline">Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние КПА 9В981 со&shy;глас&shy;но раз&shy;де&shy;лу «Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние ком&shy;плек&shy;та КПА 9В981» ин&shy;струк&shy;ции по экс&shy;плу&shy;а&shy;та&shy;ции КПА (про&shy;вер&shy;ка КПА в ре&shy;жи&shy;ме «Cамо&shy;кон&shy;троль» (ре&shy;жим «4») со&shy;глас&shy;но со&shy;от&shy;вет&shy;ству&shy;ю&shy;ще&shy;му пунк&shy;ту раз&shy;де&shy;ла «Ис&shy;поль&shy;зо&shy;ва&shy;ние КПМ» ру&shy;ко&shy;вод&shy;ства по экс&shy;плу&shy;а&shy;та&shy;ции КПМ) в объ&shy;е&shy;ме:</p>
+<p class="dline">&ndash; проверка состояния всех блоков, при&shy;над&shy;леж&shy;но&shy;стей и кабеля блока ХТК&ndash;С&ndash;12, наличия и со&shy;хран&shy;но&shy;сти пломб;</p>
+<p class="dline">&ndash; проверка нормального функционирования ручек переключателей блоков КПА;</p>
+<p class="dline">&ndash; проверка качества заземления блоков КПА;</p>
+<p class="dline">&ndash; проверка качества подключения сетевой вилки кабеля №26 к розетке на колодке соединительной ~220 В 50 Гц;</p>
+<p class="dline">&ndash; осмотр кре&shy;пе&shy;жа бло&shy;ков, вен&shy;ти&shy;ля&shy;ци&shy;он&shy;ных па&shy;не&shy;лей, пе&shy;ред&shy;них и зад&shy;них па&shy;не&shy;лей;</p>
+<p class="dline">&ndash; проверка состояния кабелей;</p>
+<p class="dline">&ndash; про&shy;вер&shy;ка ком&shy;плект&shy;но&shy;сти КПА, на&shy;ли&shy;чия и со&shy;сто&shy;я&shy;ния оди&shy;ноч&shy;но&shy;го ком&shy;плек&shy;та ЗИП;</p>
+<p class="dline">&ndash; осмотр, промывка и смазка соединителей;</p>
+<p class="dline">&ndash; про&shy;вер&shy;ка за&shy;щит&shy;ных по&shy;кры&shy;тий бло&shy;ков и це&shy;лост&shy;но&shy;сти про&shy;тек&shy;то&shy;ров и кол&shy;пач&shy;ков;</p>
+<p class="dline">&ndash; автономная проверка ЦБУ 9В784-1, при этом про&shy;ве&shy;ря&shy;ют&shy;ся:
+  <br> а) постоянные стабилизированные на&shy;пря&shy;же&shy;ния ЦБУ +5&nbsp;В, +5,35&nbsp;В, минус 5&nbsp;В, +12&nbsp;В, минус 12&nbsp;В;
+  <br> б) функционирование ЦБУ в режиме СК;
+  <br> в) функционирование ЦБУ в режиме ТЕСТ;
+  <br> г) функционирование ЦБУ в режиме КА;</p>
+<p class="dline">&ndash; автономная проверка эквивалента нагрузки 9В981.54.340, при этом проверяются величины сопротивлений изоляции;</p>
+<p class="dline">&ndash; автономная проверка БП 9Б259, при этом про&shy;ве&shy;ря&shy;ют&shy;ся постоянные стабилизированные на&shy;пря&shy;же&shy;ния БП;</p>
+<p class="dline">&ndash; проверка сопротивления изоляции цепей КПА;</p>
+<p class="dline">&ndash; проверка целостности выносных цепей за&shy;зем&shy;ле&shy;ния;</p>
+<p class="dline">&ndash; проверка электрических параметров КПА 9В981, при этом проверяются:
+  <br> а) работа (вращение) вентиляторов вентиляционных панелей 9В516.54.460;
+  <br> б) работоспособность индикаторов <br>БСС 1И25-1 и ТБС 9В981.06.000;
+  <br> в) напряжения питания БСС 1И25-1, БИ 1И24, <br>БР 1И26, а также максимальные положительные и отрицательные напряжения измерителя КПА;
+  <br> г) от&shy;но&shy;си&shy;тель&shy;ная по&shy;греш&shy;ность из&shy;ме&shy;ре&shy;ния на&shy;пря&shy;же&shy;ния по&shy;сто&shy;ян&shy;но&shy;го то&shy;ка; 
+  <br> д) дли&shy;тель&shy;ность им&shy;пуль&shy;са и дли&shy;тель&shy;ность ин&shy;тер&shy;ва&shy;ла меж&shy;ду им&shy;пуль&shy;са&shy;ми; 
+  <br> е) от&shy;но&shy;си&shy;тель&shy;ная по&shy;греш&shy;ность из&shy;ме&shy;ре&shy;ния дли&shy;тель&shy;но&shy;сти вре&shy;мен&shy;ных ин&shy;тер&shy;ва&shy;лов; 
+  <br> ж) параметры сигнала типа МЕАНДР 30&nbsp;В, 7&nbsp;кГц;
+  <br> з) параметры, определяющие режим работы блока ХТК-С-12 из состава АФК 1И27 (ток заме­дляющей системы&nbsp;&mdash; Jзс, напряжение заме­для­ющей системы, деленное на 100&nbsp;&mdash; Uзс/100);
+  <br> и) сдвиг фазы СИГНАЛА РАССОГЛАСОВАНИЯ АФК 1И27 относительно опорного сигнала ИНФ.9;
+  <br> к) дли&shy;тель&shy;ность оги&shy;ба&shy;ю&shy;щей ра&shy;дио&shy;им&shy;пуль&shy;са, глу&shy;би&shy;на ам&shy;пли&shy;туд&shy;ной мо&shy;ду&shy;ля&shy;ции и оцен&shy;ка мощ&shy;но&shy;сти сиг&shy;на&shy;ла управ&shy;ле&shy;ния АФК 1И27;</p>
+<p class="dline">&ndash; про&shy;вер&shy;ка функ&shy;ци&shy;о&shy;ни&shy;ро&shy;ва&shy;ния КПА 9В981 <br>
+в ре&shy;жи&shy;ме «Cамо&shy;кон&shy;троль» (ре&shy;жим «4»)</p>
+<p class="dline">&ndash; проведение записи в формуляре КПМ 9В990 ЦТ2.009.040 ФО о выработанном ресурсе КПА 9В981, АФК 1И27</p></td>
+
+    <td id="twoColoumn" valign="top"><br><br><br><br><br><br><br><br><br><p class="dline">+</p><br><br>+<br><br>+<br><br><p class="dline">+</p><br><p class="dline">&minus;</p><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br><br><br><br><br><br><p class="dline">&minus;</p><br><br>&minus;<br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><br>&minus;<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&minus;<br><br><p class="dline">&minus;</p></td>
+
+    <td id="threeColoumn" valign="top"><br><br><br><br><br><br><br><br><br><p class="dline">+</p><br><br>+<br><br>+<br><br><p class="dline">+</p><br><p class="dline">+</p><br>+<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br><br><br><br><br><br><p class="dline">&minus;</p><br><br>&minus;<br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><br>&minus;<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>+<br><br><p class="dline">&minus;</p></td>
+
+    <td id="fourColoumn" valign="top"><br><br><br><br><br><br><br><br><br><p class="dline">+</p><br><br>+<br><br>+<br><br><p class="dline">+</p><br><p class="dline">+</p><br>+<br><br>+<br><br>+<br><br>+<br><br>&minus;<br><br><br><br><br><br><br><p class="dline">&minus;</p><br><br>&minus;<br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><br>&minus;<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>+<br><br><p class="dline">&minus;</p></td>
+
+    <td id="fiveColoumn" valign="top"><br><br><br><br><br><br><br><br><br><p class="dline">+</p><br><br>+<br><br>+<br><br><p class="dline">+</p><br><p class="dline">+</p><br>+<br><br>+<br><br>+<br><br>+<br><br>+<br><br><br><br><br><br><br><p class="dline">+</p><br><br>+<br><br><br><p class="dline">+</p><p class="dline">+</p><br>+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>+<br><br><p class="dline">+</p></td>
+
+    <td id="sixColoumn" valign="top"><br><br><br><br><br><br><br><br><br><p class="dline">&minus;</p><br><br>&minus;<br><br>&minus;<br><br><p class="dline">&minus;</p><br><p class="dline">&minus;</p><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br><br><br><br><br><br><p class="dline">&minus;</p><br><br>&minus;<br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><br>&minus;<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>&minus;<br><br><p class="dline">&minus;</p></td>
+
+    <td id="sevenColoumn" valign="top"><br><br><br><br><br><br><br><br><br><p class="dline">+</p><br><br>+<br><br>+<br><br><p class="dline">+</p><br><p class="dline">+</p><br>+<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br><br><br><br><br><br><p class="dline">&minus;</p><br><br>&minus;<br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><br>&minus;<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>+<br><br><p class="dline">&minus;</p></td>
+
+    <td id="eightColoumn" valign="top"><br><br><br><br><br><br><br><br><br><p class="dline">&minus;</p><br><br>&minus;<br><br>&minus;<br><br><p class="dline">&minus;</p><br><p class="dline">&minus;</p><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>&minus;<br><br>+<br><br><br><br><br><br><br><p class="dline">+</p><br><br>+<br><br><br><p class="dline">+</p><p class="dline">+</p><br>+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>+<br><br><p class="dline">+</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>Радиостанция</b>
+<br>Техническое обслуживание согласно разделу &laquo;Техническое обслуживание радиостанции&raquo; руководства по эксплуатации радиостанции <br>в объеме:
+<br>&ndash; ЕТО;<br>&ndash; ТО-1;<br>&ndash; ТО-2*</td>
+    <td id="twoColoumn" valign="top"><br><br><br><br><br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="threeColoumn" valign="top"><br><br><br><br><br>+<br>&minus;<br>&minus;</td>
+    <td id="fourColoumn" valign="top"><br><br><br><br><br>&minus;<br>+<br>&minus;</td>
+    <td id="fiveColoumn" valign="top"><br><br><br><br><br>&minus;<br>&minus;<br>+</td>
+    <td id="sixColoumn" valign="top"><br><br><br><br><br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="sevenColoumn" valign="top"><br><br><br><br><br>&minus;<br>+<br>&minus;</td>
+    <td id="eightColoumn" valign="top"><br><br><br><br><br>&minus;<br>&minus;<br>+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>Устройство зарядное малогабаритное <br>УЗМ&ndash;1,5&ndash;5.01</b>
+<br>Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние со&shy;глас&shy;но раз&shy;де&shy;лу «Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние устрой&shy;ства» ру&shy;ко&shy;вод&shy;ства по экс&shy;плу&shy;а&shy;та&shy;ции устрой&shy;ства за&shy;ряд&shy;но&shy;го в объ&shy;е&shy;ме:
+<br>&ndash; ЕТО;<br>&ndash; ТО-1;<br>&ndash; ТО-2*</td>
+    <td id="twoColoumn" valign="top"><br><br><br><br><br><br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="threeColoumn" valign="top"><br><br><br><br><br><br>+<br>&minus;<br>&minus;</td>
+    <td id="fourColoumn" valign="top"><br><br><br><br><br><br>&minus;<br>+<br>&minus;</td>
+    <td id="fiveColoumn" valign="top"><br><br><br><br><br><br>&minus;<br>&minus;<br>+</td>
+    <td id="sixColoumn" valign="top"><br><br><br><br><br><br>&minus;<br>&minus;<br>&minus;</td>
+    <td id="sevenColoumn" valign="top"><br><br><br><br><br><br>&minus;<br>+<br>&minus;</td>
+    <td id="eightColoumn" valign="top"><br><br><br><br><br><br>&minus;<br>&minus;<br>+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5"><b>Пульт записи</b>
+<br>Техническое обслуживание согласно разделу &laquo;Техническое обслуживание&raquo; паспорта пульта записи в объеме:
+<br>&ndash; ТО-1;<br>&ndash; ТО-2*</td>
+    <td id="twoColoumn" valign="top"><br><br><br><br>&minus;<br>&minus;</td>
+    <td id="threeColoumn" valign="top"><br><br><br><br>&minus;<br>&minus;</td>
+    <td id="fourColoumn" valign="top"><br><br><br><br>+<br>&minus;</td>
+    <td id="fiveColoumn" valign="top"><br><br><br><br>&minus;<br>+</td>
+    <td id="sixColoumn" valign="top"><br><br><br><br>&minus;<br>&minus;</td>
+    <td id="sevenColoumn" valign="top"><br><br><br><br>+<br>&minus;</td>
+    <td id="eightColoumn" valign="top"><br><br><br><br>&minus;<br>+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние со&shy;еди&shy;ни&shy;те&shy;лей со&shy;глас&shy;но пунк&shy;ту <a href="#instructionsSoed">«ука&shy;за&shy;ния по ра&shy;бо&shy;те с ка&shy;бель&shy;ны&shy;ми со&shy;еди&shy;ни&shy;те&shy;ля&shy;ми»</a></td>
+    <td id="twoColoumn">&minus;</td>
+    <td id="threeColoumn">&minus;</td>
+    <td id="fourColoumn">+</td>
+    <td id="fiveColoumn">+</td>
+    <td id="sixColoumn">+</td>
+    <td id="sevenColoumn">+</td>
+    <td id="eightColoumn">+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Проверка состояния и комплектности ЗИП КПМ</td>
+    <td id="twoColoumn">&minus;</td>
+    <td id="threeColoumn">&minus;</td>
+    <td id="fourColoumn">+</td>
+    <td id="fiveColoumn">&minus;</td>
+    <td id="sixColoumn">&minus;</td>
+    <td id="sevenColoumn">+</td>
+    <td id="eightColoumn">&minus;</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Проверка комплектности КПМ</td>
+    <td id="twoColoumn">&minus;</td>
+    <td id="threeColoumn">&minus;</td>
+    <td id="fourColoumn">&minus;</td>
+    <td id="fiveColoumn">+</td>
+    <td id="sixColoumn">&minus;</td>
+    <td id="sevenColoumn">&minus;</td>
+    <td id="eightColoumn">+</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5">Смазка сборочных единиц и деталей КПМ со&shy;глас&shy;но пункту <a href="#instructionsSmazka">&laquo;указания по смазке&raquo;</a></td>
+    <td id="twoColoumn">&minus;</td>
+    <td id="threeColoumn">&minus;</td>
+    <td id="fourColoumn">&minus;</td>
+    <td id="fiveColoumn">&minus;</td>
+    <td id="sixColoumn">+</td>
+    <td id="sevenColoumn">&minus;</td>
+    <td id="eightColoumn">&minus;</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable5" colspan='8'><i>Примечания:</i>
+    <br>1 &laquo;+&raquo; &mdash; условное обозначение выполняемой работы;<br>2 &laquo;&minus;&raquo; &mdash; условное обозначение невыполняемой работы;<br>3 * &mdash; техническое обслуживание производится в ремонтных мастерских</td>
+  </tr>
+
+</tbody>
+</table>
+
+
+<p id="DevicesList" class='subtitles'>Перечень приборов, инструмента, приспособлений и материалов, применяемых при техническом обслуживании, консервации и расконсервации</p>
+
+<p>Перечень приборов, инструмента, приспособлений и материалов приведен в таблице 6.</p>
+
+<p class="table855">Таблица 6</p>
+<table>
+<tbody>
+  <tr>
+    <!--<th id="oneColoumnHeadTable7" rowspan="2"><div id="rotateText">Объект</div></th>-->
+    <th id="oneColoumnHeadTable6" rowspan="2">Приборы, инструмент, <br>приспособления, материалы</th>
+    <th id="twoColoumnHeadTable6" colspan="7">Вид технического обслуживания</th>
+    <th id="threeColoumn" rowspan="2">Консер-вация</th>
+    <th id="fourColoumn" rowspan="2">Раскон-серва-ция</th>
+  </tr>
+  <tr>
+    <th id="threeColoumn">КО</th>
+    <th id="threeColoumn">ЕТО</th>
+    <th id="threeColoumn">ТО-1</th>
+    <th id="threeColoumn">ТО-2</th>
+    <th id="threeColoumn">СО</th>
+    <th id="threeColoumn">ТО-1х</th>
+    <th id="threeColoumn">ТО-2х</th>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6"><b>1. Шасси автомобиля КАМАЗ-5350</b>
+    <p class="dline">Инструмент и принадлежности из ЗИП автомобиля</p>
+    <p class="dline">Материалы согласно руководству по эксплуатации автомобиля</p>
+    <p class="dline">Оборудование из состава ремонтных органов</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><br><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><br><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><br><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><br><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><br><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><br><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><br><p class="dline">+</p></td>
+    <td id="threeColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><br><p class="dline">&minus;</p></td>
+    <td id="fourColoumn" valign="top"><br><p class="dline">&minus;</p><br><p class="dline">+</p><br><p class="dline">&minus;</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6"><b>2. Кузов-фургон К5350</b>
+    <p class="dline">Инструмент и принадлежности из ЗИП КПМ и автомобиля
+    <p class="dline">Мегаомметр Е6&ndash;16
+    <p class="dline">Ветошь обтирочная сортированная
+    <p class="dline">Нефрас С50/170
+    <p class="dline">Масло, применяемое для двигателя ав&shy;то&shy;мо&shy;би&shy;ля
+    <p class="dline">Графитная смазка УСсА
+    <p class="dline">Смазка пушечная (ПВК)
+    <p class="dline">Солидол С (солидол Ж) или смазка ЦИАТИМ&ndash;201
+    <p class="dline">Смазка Литол&ndash;24
+    <p class="dline">Смазка Лита</td>
+
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br>&minus;<p class="dline">&minus;</p><br>&minus;<br><br>&minus;<p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br>&minus;<p class="dline">&minus;</p><br>&minus;<br><br>&minus;<p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br>&minus;<p class="dline">&minus;</p><br>+<br><br>+<p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><br>&minus;<p class="dline">&minus;</p><br>+<br><br>+<p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">+</p><br>+<p class="dline">&minus;</p><br>+<br><br>+<p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><br>&minus;<p class="dline">&minus;</p><br>+<br><br>+<p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><br>&minus;<p class="dline">+</p><br>+<br><br>+<p class="dline">+</p></td>
+    <td id="threeColoumn" valign="top"><br><p class="dline">+</p><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><br>&minus;<p class="dline">+</p><br>+<br><br>+<p class="dline">+</p></td>
+    <td id="fourColoumn" valign="top"><br><p class="dline">&minus;</p><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><br>&minus;<p class="dline">&minus;</p><br>&minus;<br><br>&minus;<p class="dline">&minus;</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6"><b>3. Установка ОВ95</b>
+    <p class="dline">Инструмент и принадлежности из ЗИП КПМ
+    <p class="dline">Бензин Б&ndash;91/115
+    <p class="dline">Ветошь
+    <p class="dline">Смазка ЦИАТИМ&ndash;201 или смазка ВНИИ НП&ndash;231
+    <p class="dline">Графит &laquo;П&raquo;
+    <p class="dline">Лак бакелитовый
+    <p class="dline">Шкурка стеклянная зернистостью С100
+    <p class="dline">Керосин
+
+    <td id="twoColoumn" valign="top"><br><p class="dlline">&minus;</p>&minus;<br><p class="dline">+</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p>&minus;</td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p>&minus;<br><p class="dline">+</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p>&minus;</td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p>&minus;<br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p>+</td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p>+<br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p>+</td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">&minus;</p>&minus;<br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p>&minus;</td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p>&minus;<br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p>+</td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p>+<br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p>+</td>
+    <td id="threeColoumn" valign="top"><br><p class="dlline">&minus;</p>+<br><p class="dline">+</p><p class="dlline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p>&minus;</td>
+    <td id="fourColoumn" valign="top"><br><p class="dlline">&minus;</p>&minus;<br><p class="dline">+</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p>&minus;</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6"><b>4. Кондиционер</b>
+    <p class="dline">Мегаомметр Е6&ndash;16
+    <p class="dline">Кисть КФК8
+    <p class="dline">Инструмент из ЗИП КПМ
+    <p class="dline">Ветошь обтирочная сортированная
+    <p class="dline">Проволока М&ndash;0,5
+    <p class="dline">Смазка ЦИАТИМ&ndash;221
+    <p class="dline">Спирт этиловый технический
+    <p class="dline">Эмаль ЭП&ndash;567 защитная
+    <p class="dline">Нефрас&ndash;С50/170
+    <p class="dline">Масло консервационное К&ndash;17
+
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="threeColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="fourColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6"><b>5. Электроустановка</b>
+    <p class="dline">Инструмент и принадлежности из ЗИП КПМ
+    <p class="dline">Ветошь
+    <p class="dline">Шлифовальная шкурка
+    <p class="dline">Термометр
+    <p class="dline">Мегаомметр Е6&ndash;16
+    <p class="dline">Масло АУ или МС&ndash;20
+    <p class="dline">Масло трансмиссионное ТСп&ndash;15К (смесь масла трансмиссионного ТСп&ndash;15К с 15% дизельного топлива А&ndash;0,2)
+    <p class="dline">Смазка Литол&ndash;24
+    <p class="dline">Смазка ЦИАТИМ&ndash;221
+    <p class="dline">Уайт-спирит
+    <p class="dline">Смазка пушечная (ПВК)
+    <p class="dline">Бумага парафинированная
+    <p class="dline">Шпагат</td>
+
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><br><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><br><br><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="threeColoumn" valign="top"><br><p class="dlline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="fourColoumn" valign="top"><br><p class="dlline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6"><b>6. Прибор ИМД&ndash;21Б</b>
+    <p class="dline">Инструмент из ЗИП КПМ</p></td>
+    <td id="twoColoumn"><br><p class="dline">&minus;</p></td>
+    <td id="twoColoumn"><br><p class="dline">&minus;</p></td>
+    <td id="twoColoumn"><br><p class="dline">+</p></td>
+    <td id="twoColoumn"><br><p class="dline">+</p></td>
+    <td id="twoColoumn"><br><p class="dline">&minus;</p></td>
+    <td id="twoColoumn"><br><p class="dline">&minus;</p></td>
+    <td id="twoColoumn"><br><p class="dline">&minus;</p></td>
+    <td id="threeColoumn"><br><p class="dline">&minus;</p></td>
+    <td id="fourColoumn"><br><p class="dline">&minus;</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6"><b>7. БКСО</b>
+    <p class="dline">Ветошь
+    <p class="dline">Шоферский инструмент
+    <p class="dline">Смазка пушечная (ПВК) или масло консервационное К&ndash;17
+    <p class="dline">Смазка НГ&ndash;203Б
+    <p class="dline">Уайт-спирит
+    <p class="dline">Манометр
+    <p class="dline">Кисть
+    <p class="dline">Эмаль ПФ&ndash;1105 защитная
+    <p class="dline">Мерная емкость 1&ndash;2 л
+    <p class="dline">Часы с секундной стрелкой
+    <p class="dline">Оборудование из состава ремонтных органов</td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="threeColoumn" valign="top"><br><p class="dline">+</p><p class="dline">&minus;</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="fourColoumn" valign="top"><br><p class="dline">+</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6"><b>8. КИП</b>
+    <p class="dline">Ветошь
+    <p class="dline">Салфетка
+    <p class="dline">Инструмент из ЗИП КПМ</td>
+    <td id="twoColoumn"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="threeColoumn"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p></td>
+    <td id="fourColoumn"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p></td>
+  </tr>
+
+  <td id="oneColoumnTable6"><b>9. КПА 9В981</b>
+    <p class="dline">Ветошь
+    <p class="dline">Отвертка 7810&ndash;0906 (0,4х145)
+    <p class="dline">Спирт этиловый
+    <p class="dline">Кисть КФК8
+    <p class="dline">Смазка ЦИАТИМ&ndash;201
+    <p class="dline">Мультиметр В7&ndash;64/1
+    <p class="dline">Мегаомметр Е6&ndash;16
+    <p class="dline">Мультиметр В7&ndash;61
+    <p class="dline">Частотомер Ч3&ndash;88
+    <p class="dline">Осциллограф С1&ndash;176
+    <p class="dline">Блок ХТК&ndash;С&ndash;30
+    <p class="dline">Узел ХТК&ndash;С&ndash;13
+    <p class="dline">Колодка контрольная 9В516.54.320
+    <p class="dline">Эквивалент нагрузки 9В981.54.340
+    <p class="dline">Нагрузка 9В981.54.710
+    <p class="dline">Лист тонкой (газетной) бумаги размером около 200х120 мм
+    <p class="dline">Секундомер СОПпр&ndash;2а&ndash;2&ndash;010
+    <p class="dline">Шнуры заземления <br>№ 53 9В981.54.620&ndash;03
+    <p class="dline">Кабели № 60, 61, 62
+    <p class="dline">Заглушки 9В516.54.190, 9В516.54.200
+    <p class="dline">Шнуры 9В981.54.650, 9В981.54.650-02
+    <p class="dline">Провода ЦТ4.863.040-01, <br>ЦТ4.863.040&ndash;02, ЦТ4.863.041, ЦТ4.863.041&ndash;01, ЦТ4.863.006, ЦТ6.863.007
+    <p class="dline">Смазка пушечная (ПВК)
+    <p class="dline">Нефрас С3&ndash;80/120
+    <p class="dline">Вата х/б мебельная
+    <p class="dline">Тальк
+    <p class="dline">Бумага парафинированная БП&ndash;5&ndash;35</td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><br><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</td>
+
+    <td id="threeColoumn" valign="top"><br><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+
+    <td id="fourColoumn" valign="top"><br><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+  </tr>
+
+  <td id="oneColoumnTable6"><b>10. Радиостанция Р&ndash;168&ndash;0,1УМ</b>
+    <p class="dline">Ветошь
+    <p class="dline">Одиночный комплект ЗИП-О ра&shy;дио&shy;стан&shy;ции
+    <p class="dline">Кисть для покраски
+    <p class="dline">Нефрас С3&ndash;80/120
+    <p class="dline">Спирт-ректификат
+    <p class="dline">Технический вазелин
+    <p class="dline">Сред&shy;ства из&shy;ме&shy;ре&shy;ния со&shy;глас&shy;но при&shy;ло&shy;же&shy;нию А ру&shy;ко&shy;вод&shy;ства по экс&shy;плу&shy;а&shy;та&shy;ции ра&shy;дио&shy;стан&shy;ции
+    <p class="dline">Волосяная кисточка
+    <p class="dline">Эмаль ХВ&ndash;124 защитная</td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><br><br><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><br><br><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><br><br><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><br><br><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><br><br><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="threeColoumn" valign="top"><br><p class="dline">+</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="fourColoumn" valign="top"><br><p class="dline">+</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+  </tr>
+
+  <td id="oneColoumnTable6"><b>11. Соединители</b>
+    <p class="dline">Ветошь
+    <p class="dline">Салфетка
+    <p class="dline">Спирт этиловый ректификованный
+    <p class="dline">Нефрас С50/120
+    <p class="dline">Смазка ЦИАТИМ&ndash;201
+    <p class="dline">Бумага парафинированная БП&ndash;3&ndash;35
+    <p class="dline">Шпагат</td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="threeColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="fourColoumn" valign="top"><br><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+  </tr>
+
+  <td id="oneColoumnTable6"><b>12. Смазка сборочных изделий <br>и деталей</b>
+    <p class="dline">Ветошь
+    <p class="dline">Нефрас 50/170
+    <p class="dline">Смазка Литол&ndash;24
+    <p class="dline">Смазка ЦИАТИМ&ndash;201 </br>или пресс-солидол С (пресс-солидол Ж)
+    <p class="dline">Кисть Кр55б</td>
+    <td id="twoColoumn" valign="top"><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p></td>
+    <td id="twoColoumn" valign="top"><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="threeColoumn" valign="top"><br><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p></td>
+    <td id="fourColoumn" valign="top"><br><br><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p></td>
+  </tr>
+
+  <tr>
+  <td id="oneColoumnTable6"><b>13. КПМ</b>
+    <p class="dline">Мегаомметр Е6&ndash;16
+    <p class="dline">Ветошь обтирочная сортированная
+    <p class="dline">Смазка пушечная (ПВК)
+    <p class="dline">Нефрас С50/170
+    <p class="dline">Бумага парафинированная БП&ndash;3&ndash;35
+    <p class="dline">Шпагат ШЛ 2,50 Н1Н 4116
+    <p class="dline">Салфетка Ткань плательная начесанная (фланель)
+    <p class="dline">Тальк молотый ТРПВ
+    <p class="dline">Пленка полиэтиленовая, полотно, 0,150х1000, 1 сорт, М
+    <p class="dline">Лента с липким слоем 0,080х50, Н, первый сорт
+    <p class="dline">Силикагель технический КСМГ
+    <p class="dline">Проволока 0,5&ndash;10
+    <p class="dline">Пломба 1&ndash;6х10&ndash;АД1М</td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="twoColoumn" valign="top"><br><p class="dline">+</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+    <td id="threeColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dlline">+</p><p class="dlline">+</p><p class="dline">+</p><p class="dline">+</p><p class="dline">+</p></td>
+    <td id="fourColoumn" valign="top"><br><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">+</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dlline">+</p><p class="dline">&minus;</p><p class="dlline">&minus;</p><p class="dlline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p><p class="dline">&minus;</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable6" colspan='10'><i>Примечания:</i>
+    <br>1 &laquo;+&raquo; &mdash; условное обозначение применения;<br>2 &laquo;&minus;&raquo; &mdash; условное обозначение неприменения</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+
+<p id="techniques" class='subtitles'>Методики проведения технического обслуживания</p>
+
+<p id="obslKontrIzm" class='firstinsubtitles'>Техническое обслуживание контрольно-измерительных приборов</p>
+
+<p>Тех&shy;ни&shy;че&shy;ское об&shy;слу&shy;жи&shy;ва&shy;ние КИП за&shy;клю&shy;ча&shy;ет&shy;ся в под&shy;дер&shy;жа&shy;нии их чи&shy;сто&shy;ты, ис&shy;прав&shy;но&shy;сти и про&shy;вер&shy;ке ну&shy;лей (у стре&shy;лоч&shy;ных при&shy;бо&shy;ров), за&shy;ме&shy;не пи&shy;та&shy;ю&shy;щих эле&shy;мен&shy;тов. Кор&shy;рек&shy;ти&shy;ров&shy;ку ну&shy;лей при&shy;бо&shy;ров, встро&shy;ен&shy;ных в обо&shy;ру&shy;до&shy;ва&shy;ние, про&shy;из&shy;во&shy;дить не&shy;по&shy;сред&shy;ствен&shy;но пе&shy;ред тех&shy;ни&shy;че&shy;ским об&shy;слу&shy;жи&shy;ва&shy;ни&shy;ем то&shy;го обо&shy;ру&shy;до&shy;ва&shy;ния, на ко&shy;то&shy;ром они уста&shy;нов&shy;ле&shy;ны.
+<br>
+<p class="dline">Кор&shy;рек&shy;ти&shy;ров&shy;ку ну&shy;лей при&shy;бо&shy;ров про&shy;из&shy;во&shy;дить сле&shy;ду&shy;ю&shy;щим об&shy;ра&shy;зом:</p>
+– из&shy;влечь из cум&shy;ки в ящи&shy;ке №4 тум&shy;боч&shy;ки №1 от&shy;верт&shy;ку 7810–0303(0,4х120); <br>
+– уста&shy;но&shy;вить стрел&shy;ку при&shy;бо&shy;ра на ну&shy;ле&shy;вое де&shy;ле&shy;ние ме&shy;ха&shy;ни&shy;че&shy;ским кор&shy;рек&shy;то&shy;ром ну&shy;ля с по&shy;мо&shy;щью от&shy;верт&shy;ки так, что&shy;бы стрел&shy;ка при&shy;бо&shy;ра не вы&shy;хо&shy;ди&shy;ла за пре&shy;де&shy;лы рис&shy;ки ну&shy;ле&shy;во&shy;го де&shy;ле&shy;ния; <br>
+– дать от&shy;кло&shy;не&shy;ние стрел&shy;ке при&shy;бо&shy;ра от ну&shy;ле&shy;во&shy;го де&shy;ле&shy;ния (вклю&shy;чить при&shy;бор в ра&shy;бо&shy;ту); <br>
+– убе&shy;дить&shy;ся, что стрел&shy;ка при&shy;бо&shy;ра по&shy;сле его от&shy;клю&shy;че&shy;ния уста&shy;но&shy;ви&shy;лась в пре&shy;де&shy;лах тол&shy;щи&shy;ны рис&shy;ки ну&shy;ле&shy;во&shy;го де&shy;ле&shy;ния; <br>
+– про&shy;ве&shy;рить уста&shy;нов&shy;ку ну&shy;ля при&shy;бо&shy;ра, ес&shy;ли стрел&shy;ка при&shy;бо&shy;ра уста&shy;но&shy;ви&shy;лась вне пре&shy;де&shy;ла рис&shy;ки ну&shy;ле&shy;во&shy;го де&shy;ле&shy;ния.
+<p class="dline">Для уста&shy;нов&shy;ки стрел&shy;ки на ну&shy;ле&shy;вую от&shy;мет&shy;ку шка&shy;лы диф&shy;ма&shy;но&shy;мет&shy;ра-на&shy;по&shy;ро&shy;ме&shy;ра ФВУА про&shy;де&shy;лать сле&shy;ду&shy;ю&shy;щее:</p>
+– уста&shy;но&shy;вить встав&shy;ку пе&shy;ре&shy;клю&shy;че&shy;ния на щи&shy;те кон&shy;тро&shy;ля ФВУА в по&shy;ло&shy;же&shy;ние ПОДПОР; <br>
+– из&shy;влечь из cум&shy;ки в ящи&shy;ке №4 тум&shy;боч&shy;ки №1 от&shy;верт&shy;ку ПШ 0,8х5,5х70; <br>
+– от&shy;вер&shy;нуть с по&shy;мо&shy;щью от&shy;верт&shy;ки винт-за&shy;глуш&shy;ку (пласт&shy;мас&shy;со&shy;вый) на зад&shy;ней стен&shy;ке при&shy;бо&shy;ра и с по&shy;мо&shy;щью той же от&shy;верт&shy;ки по&shy;во&shy;ро&shy;том внут&shy;рен&shy;не&shy;го вин&shy;та уста&shy;но&shy;вить стрел&shy;ку по цен&shy;тру ну&shy;ле&shy;вой от&shy;мет&shy;ки шка&shy;лы; <br>
+– за&shy;вер&shy;нуть винт-за&shy;глуш&shy;ку на ме&shy;сто, при этом тща&shy;тель&shy;но сле&shy;дить за со&shy;хран&shy;но&shy;стью и плот&shy;ным при&shy;ле&shy;га&shy;ни&shy;ем про&shy;клад&shy;ки к кор&shy;пу&shy;су при&shy;бо&shy;ра для то&shy;го, что&shy;бы не на&shy;ру&shy;ши&shy;лась его гер&shy;ме&shy;тич&shy;ность; <br>
+– вклю&shy;чить ФВУА на 1–2 мин и вы&shy;клю&shy;чить; <br>
+– убе&shy;дить&shy;ся, что по&shy;сле вы&shy;клю&shy;че&shy;ния ФВУА стрел&shy;ка диф&shy;ма&shy;но&shy;мет&shy;ра-на&shy;по&shy;ро&shy;ме&shy;ра уста&shy;но&shy;ви&shy;лась в пре&shy;де&shy;лах тол&shy;щи&shy;ны рис&shy;ки ну&shy;ле&shy;во&shy;го де&shy;ле&shy;ния; <br>
+– по&shy;вто&shy;рить уста&shy;нов&shy;ку ну&shy;ля, ес&shy;ли стрел&shy;ка диф&shy;ма&shy;но&shy;мет&shy;ра-на&shy;по&shy;ро&shy;ме&shy;ра уста&shy;но&shy;ви&shy;лась вне рис&shy;ки ну&shy;ле&shy;во&shy;го де&shy;ле&shy;ния.<br>
+<p>Кор&shy;рек&shy;ти&shy;ров&shy;ка ну&shy;лей ом&shy;мет&shy;ра и вольт&shy;мет&shy;ра на бло&shy;ке кон&shy;тро&shy;ля ЭУ про&shy;из&shy;во&shy;дит&shy;ся по вы&shy;ше&shy;при&shy;ве&shy;ден&shy;ной ме&shy;то&shy;ди&shy;ке кор&shy;рек&shy;ти&shy;ров&shy;ки ну&shy;лей при&shy;бо&shy;ров, име&shy;ю&shy;щих ме&shy;ха&shy;ни&shy;че&shy;ский кор&shy;рек&shy;тор ну&shy;ля.</p>
+<p>При про&shy;вер&shy;ке ну&shy;лей при&shy;бо&shy;ров бло&shy;ка кон&shy;тро&shy;ля вклю&shy;чить элек&shy;тро&shy;уста&shy;нов&shy;ку по ме&shy;то&shy;ди&shy;ке пунк&shy;та «за&shy;пуск элек&shy;тро&shy;уста&shy;нов&shy;ки» раз&shy;де&shy;ла «Ис&shy;поль&shy;зо&shy;ва&shy;ние КПМ».</p>
+<p>Ча&shy;сто&shy;то&shy;ме&shy;ры на бло&shy;ке кон&shy;тро&shy;ля ЭУ и в ка&shy;би&shy;не ав&shy;то&shy;мо&shy;би&shy;ля не име&shy;ют ну&shy;ле&shy;во&shy;го де&shy;ле&shy;ния.</p>
+
+<p id="instructionsSmazka" class='insubtitles'>Указания по смазке</p>
+
+<p>В период эксплуатации и хранения КПМ смазку элементов КПА, автомобиля КАМАЗ&ndash;5350, кузова К5350, генератора из состава ЭУ, кондиционера, установки ОВ95 производить согласно указаниям их руководств (инструкций) по эксплуатации.</p>
+
+<p>Кар&shy;дан&shy;ный вал в при&shy;во&shy;де ге&shy;не&shy;ра&shy;то&shy;ра не&shy;об&shy;хо&shy;ди&shy;мо сма&shy;зы&shy;вать смаз&shy;кой для кар&shy;дан&shy;ных ва&shy;лов ав&shy;то&shy;мо&shy;би&shy;ля. Для смаз&shy;ки в под&shy;шип&shy;ни&shy;ках ре&shy;дук&shy;то&shy;ра ЭУ при&shy;ме&shy;ня&shy;ет&shy;ся смаз&shy;ка ЦИАТИМ–221 ГОСТ 9433–80. В по&shy;лость кор&shy;пу&shy;са ре&shy;дук&shy;то&shy;ра за&shy;ли&shy;ва&shy;ет&shy;ся мас&shy;ло транс&shy;мис&shy;си&shy;он&shy;ное ТСп–15К ГОСТ 23652–79 (за&shy;пра&shy;воч&shy;ная нор&shy;ма 2 л), при тем&shy;пе&shy;ра&shy;ту&shy;ре воз&shy;ду&shy;ха ни&shy;же 243 К (ми&shy;нус 30 °С) при&shy;ме&shy;нять смесь мас&shy;ла транс&shy;мис&shy;си&shy;он&shy;но&shy;го ТСп–15К ГОСТ 23652–79 с 15 % ди&shy;зель&shy;но&shy;го топ&shy;ли&shy;ва А–0,2 ГОСТ 305–82.</p>
+
+<p>Смазку резьбовых соединений соединителей производить согласно указаниям пункта <a href="#techniques">&laquo;методики проведения технического об&shy;слу&shy;жи&shy;ва&shy;ния&raquo;.</a></p>
+
+<p id="instructionsSoed" class='insubtitles'>Указания по работе с кабельными соединителями</p>
+
+<p class="NB" align="center">ВНИМАНИЕ! ПРИ РАБОТЕ С СОЕДИНИТЕЛЯМИ ЗАПРЕЩАЕТСЯ:
+<br>&ndash; БРОСАТЬ КАБЕЛИ С ОТКРЫТЫМИ СОЕДИНИТЕЛЯМИ НА ПОЛ, ЗЕМЛЮ И Т.П.;<br>&ndash; ПОЛЬЗОВАТЬСЯ ПРИ ПОДСОЕДИНЕНИИ И ОТСОЕДИНЕНИИ СОЕДИНИТЕЛЕЙ КАБЕЛЕЙ <br>СЛУЧАЙНЫМ ИНСТРУМЕНТОМ</p>
+
+<p class="dline">Загрязненные соединители следует промыть, для чего проделать следующее:</p>
+
+&ndash; взять из ящика №4 тумбочки №1 салфетку и банку со спиртом, из ящика №3 &mdash; кисть КФК8;<br>&ndash; с помощью кисти обмыть спиртом штыри загрязненного соединителя, гнезда соединителя протереть салфеткой, смоченной в спирте.</p>
+
+<i><p class="dline">Примечания</i>
+
+<br>1 Для промывки соединителей использовать спирт этиловый ректификованный.
+
+<br>2 При промывке держать соединители слегка наклоненными вниз, чтобы загрязненный спирт не мог затекать внутрь соединителя.</p>
+
+Промывке подлежат:</p>
+
+&ndash; контакты соединителей при обнаружении потерь контактирования в процессе эксплуатации (расход спирта 3 мл
+на промывку 100 контактов);<br>&ndash; контакты всех соединителей при ТО-1, ТО-2 (расход спирта на одну промывку всех контактов 100 мл).</p>
+
+<p>При сезонном обслуживании резьбовые соединения всех соединителей следует смазать тонким слоем смазки ЦИАТИМ&ndash;201,
+предварительно промыв их нефрасом С50/170.</p>
+
+<p class="dline">Смазку производить в следующей последовательности:</p>
+
+&ndash; взять из ящика № 4 тумбочки № 1 салфетку и банку со смазкой ЦИАТИМ&ndash;201;<br>&ndash; с помощью салфетки смыть нефрасом с резьбовых соединений соединителей грязь и остатки прежней смазки, при этом следить за тем, чтобы нефрас не попадал на контакты и изоляционные материалы соединителей;<br>&ndash; удалить ветошью следы подтеков нефраса;<br>&ndash; просушить на воздухе соединители в течение 10&ndash;15 мин;<br>&ndash; смазать тонким слоем смазки ЦИАТИМ&ndash;201 резьбовые соединения соединителей (расход смазки от 0,2 до 0,8 г на одну со&shy;еди&shy;ня&shy;е&shy;мую пару).</p>
+
+<p id="obslKPA81" class='insubtitles'>Проведение технического обслуживания №2 КПА 9В981</p>
+
+<p class="dline">Для подготовки технического обслуживания №2 КПА 9В981 проделать следующее: </p>
+
+&ndash;извлечь из кабельного ящика в энергоотсеке кабели №№ 60, 61, 62;<br>&ndash; извлечь из ящика №3 тумбочки №1 блок ХТК&ndash;С&ndash;30, нагрузку 9В981.54.710, секундомер СОПпр&ndash;2а&ndash;2&ndash;010, шнуры 9В981.54.650, 9В981.54.650&ndash;02, шнуры заземления 9В981.54.620&ndash;03, заглушки 9В516.54.190, 9В516.54.200, кисть КФК8 и отвертку
+7810&ndash;0906 (0,4х145);<br>&ndash; извлечь из ящика №4 тумбочки №1 узел ХТК&ndash;С&ndash;13 и установить на левом рабочем столе;<br>&ndash; извлечь из ящика №4 тумбочки №1 контрольную колодку, эквивалент нагрузки, провода, измерительный кабель и кабель пи&shy;та&shy;ния из ЗИП В7&ndash;64/1, банки со спиртом и смазкой ЦИАТИМ&ndash;201;<br>&ndash; снять блок ХТК&ndash;С&ndash;12,
+размещенный в нише, и передать его в кузов через люк в стенке ниши, установив блок ХТК&ndash;С&ndash;12 на левом рабочем столе;<br>&ndash; снять с панели №1 тумбочки №2 мультиметр В7-64/1, мегаомметр Е6&ndash;16 и мультиметр В7&ndash;61;<br>&ndash; установить мультиметр В7&ndash;64/1, мегаомметр Е6&ndash;16, мультиметр В7&ndash;61 на левом рабочем столе;<br>&ndash; снять с панели №2 тумбочки №2 осциллограф С1&ndash;176 и частотомер Ч3&ndash;88, извлечь измерительные кабели и кабели питания из ЗИП ЧЗ-88 и С1&ndash;176;<br>&ndash; установить осциллограф С1&ndash;176 и частотомер Ч3&ndash;88 на левом рабочем столе и заземлить их шнурами заземления, подсоединив шнуры заземления к клеммам &laquo;&perp;&raquo; приборов и колодки соединительной ~220 В 50 Гц или колодки заземления;<br>&ndash; подключить вилки сетевых кабелей питания приборов к гнездам колодки соединительной или розеток &nbsp;~ 220 В 50 Гц на левой стенке кузова;<br>&ndash; включить тумблеры СЕТЬ на приборах.</p>
+
+<p>Конкретные указания по подготовке КИП в различных режимах работы приведены в технических описаниях и инструкциях по экс&shy;плу&shy;а&shy;та&shy;ции КПА и КИП.</p>
+
+<p><i>Примечание &mdash; При ра&shy;бо&shy;те по пунк&shy;ту 9.9.13 ин&shy;струк&shy;ции 9В981.00.000 ИЭ с ос&shy;цил&shy;ло&shy;гра&shy;фом С1–176 при кон&shy;тро&shy;ле глу&shy;би&shy;ны ам&shy;пли&shy;туд&shy;ной мо&shy;ду&shy;ля&shy;ции, пол&shy;ный раз&shy;мах им&shy;пуль&shy;са Uа дол&shy;жен быть в пре&shy;де&shy;лах от 4,5 до 5,5 кле&shy;ток экра&shy;на (ин&shy;ди&shy;ка&shy;тор ВОЛЬТ/ДЕЛ в по&shy;ло&shy;же&shy;нии 0,5 V), а ниж&shy;ний уро&shy;вень им&shy;пуль&shy;са Uв дол&shy;жен на&shy;хо&shy;дить&shy;ся в пре&shy;де&shy;лах от 1,8 до 2,2 кле&shy;ток экра&shy;на, что бу&shy;дет со&shy;от&shy;вет&shy;ство&shy;вать глу&shy;би&shy;не мо&shy;ду&shy;ля&shy;ции m=(40,0±2,8)%.</p></i>
+
+<p>Техническое обслуживание проводить в соответствии с указаниями раздела 9 &laquo;Техническое обслуживание комплекта КПА 9В981&raquo; инструкции по эксплуатации 9В981.00.000 ИЭ по схеме стыковки, указанной на рисунке 13 в руководстве по экс&shy;плу&shy;а&shy;та&shy;ции ЦТ2.009.040&nbsp;РЭ.</p>
+
+<p id="obslElectrostation" class='insubtitles'>Техническое обслуживание электроустановки</p>
+
+<p class="dline">При КО ЭУ проделать следующее:</p>
+
+&ndash; проверить внешнее состояние генератора, блока контроля, блока управления и привода генератора, при этом все элементы ЭУ должны содержаться в чистоте, в генератор не должны попадать вода и масло, винты и гайки должны быть плотно затянуты, изо&shy;ля&shy;ци&shy;он&shy;ные части очищены от копоти и пыли, провода должны быть надежно закреплены;<br>&ndash; включить ЭУ согласно указаниям пункта 2.4.5 и проверить показания всех контрольно-измерительных приборов на блоке кон&shy;тро&shy;ля;<br>&ndash; при по&shy;яв&shy;ле&shy;нии не&shy;обыч&shy;ных шу&shy;мов в ра&shy;бо&shy;те ЭУ (из&shy;ме&shy;не&shy;ние вы&shy;со&shy;ты то&shy;на зву&shy;ка, скре&shy;жет, сту&shy;ки) вы&shy;клю&shy;чить ЭУ, оста&shy;но&shy;вить дви&shy;га&shy;тель ав&shy;то&shy;мо&shy;би&shy;ля и устра&shy;нить не&shy;ис&shy;прав&shy;но&shy;сти в со&shy;от&shy;вет&shy;ствии с пунк&shy;том «по&shy;иск не&shy;ис&shy;прав&shy;но&shy;стей и устра&shy;не&shy;ние по&shy;след&shy;ствий от&shy;ка&shy;зов и по&shy;вре&shy;жде&shy;ний» раз&shy;де&shy;ла «Те&shy;ку&shy;щий ре&shy;монт КПМ» ру&shy;ко&shy;вод&shy;ства по экс&shy;плу&shy;а&shy;та&shy;ции КПМ и раз&shy;де&shy;лом 15 ру&shy;ко&shy;вод&shy;ства по экс&shy;плу&shy;а&shy;та&shy;ции ге&shy;не&shy;ра&shy;то&shy;ра ЭУ.</p>
+
+<p class="dline">При ЕТО ЭУ дополнительно к работе контрольного осмотра проделать следующее:</p>
+
+&ndash; очистить ЭУ от грязи, протереть чистой ветошью;<br>&ndash; осмотреть ЭУ и устранить неисправности, если они были обнаружены в процессе работы;<br>&ndash; провести работы по техническому обслуживанию ге&shy;не&shy;ра&shy;то&shy;ра согласно разделу 16 руководства по эксплуатации гене&shy;ра&shy;то&shy;ра.</p>
+
+<p class="dline">При ТО-1 ЭУ дополнительно к работам ЕТО выполнить следующее:</p>
+
+&ndash; проверить надежность крепления всех элементов ЭУ;<br>&ndash; провести профилактический осмотр генератора согласно разделу 16 технического описания и инструкции по эксплуатации гене&shy;ра&shy;то&shy;ра.</p>
+
+<p><i>Примечание &mdash; При продувке генератора использовать воздушную магистраль автомобиля.</i></p>
+
+<p>При ТО-2 ЭУ провести работы ТО-1 ЭУ.</p>
+
+<p>До&shy;пол&shy;ни&shy;тель&shy;но при ТО-2 ЭУ не ре&shy;же од&shy;но&shy;го ра&shy;за в че&shy;ты&shy;ре го&shy;да про&shy;ве&shy;сти ра&shy;бо&shy;ты по тех&shy;ни&shy;че&shy;ско&shy;му об&shy;слу&shy;жи&shy;ва&shy;нию ге&shy;не&shy;ра&shy;то&shy;ра соглас&shy;но раз&shy;де&shy;лу 16 тех&shy;ни&shy;че&shy;ско&shy;го опи&shy;са&shy;ния и ин&shy;струк&shy;ции по экс&shy;плу&shy;а&shy;та&shy;ции ге&shy;не&shy;ра&shy;то&shy;ра (без про&shy;фи&shy;лак&shy;ти&shy;че&shy;ско&shy;го осмот&shy;ра ге&shy;не&shy;ра&shy;то&shy;ра).</p>
+
+<p>Замена смазки в подшипниках редуктора ЭУ проводится одновременно с заменой смазки в подшипниках генератора. Для снятия подшипников необходимо снять крышки, вынуть уплотняющие манжеты, затем вынуть подшипники.</p>
+
+<p class="dline">При СО ЭУ проделать следующее:</p>
+
+&ndash; очистить ЭУ от грязи;<br>&ndash; протереть ЭУ чистой ветошью.</p>
+
+<p class="dline">Для замены масла в корпусе редуктора необходимо:</p>
+
+&ndash; отвинтить пробку слива масла в нижней части корпуса и слить масло;<br>&ndash;  завернуть пробку;<br>&ndash; отвинтить пробку на верхней крышке редуктора;<br>&ndash; залить масло трансмиссионное ТСп&ndash;15К ГОСТ&nbsp;23652&ndash;79 (заправочная норма 2 л) в полость корпуса редуктора, при температуре воздуха ниже 243 К (минус 30 &deg;С) применять смесь масла трансмиссионного ТСп&ndash;15К ГОСТ&nbsp;23652&ndash;79 с 15% дизельного топлива А&nbsp;0,2 ГОСТ&nbsp;305&ndash;82, завернуть пробку.</p>
+
+<p id="CheckEfficiency" class='titles'><b>Проверка работоспособности КПМ</b></p>
+
+<p>Перечень проверок работоспособности
+КПМ приведен в таблице 7.</p>
+
+<p class="table855">Таблица 7</p>
+<table>
+<tbody>
+  <tr>
+    <th id="oneColoumnHeadTable7">Наименование работ</th>
+    <th id="twoColoumnTable7">Кто выполняет</th>
+    <th id="threeColoumnTable7">Средства измерений, вспомогательные технич. устройства <br>и материалы</th>
+    <th id="fourColoumnHeadTable7">Контрольные значения параметров</th>
+  </tr>
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка наличия эксплуатационной документации</td>
+    <td id="twoColoumnTable7" valign="top">Оператор</td>
+    <td id="threeColoumnTable7"></td>
+    <td id="oneColoumnTable7" valign="top">На&shy;ли&shy;чие экс&shy;плу&shy;а&shy;та&shy;ци&shy;он&shy;ной до&shy;ку&shy;мен&shy;та&shy;ции долж&shy;но со&shy;от&shy;вет&shy;ство&shy;вать ве&shy;до&shy;мо&shy;сти экс&shy;плу&shy;а&shy;та&shy;ци&shy;он&shy;ных до&shy;ку&shy;мен&shy;тов ЦТ2.009.040 ВЭ</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка правильности и своевре&shy;менности записей в формуляре</td>
+    <td id="twoColoumnTable7" valign="top">Командир КПМ</td>
+    <td id="threeColoumnTable7"></td>
+    <td id="oneColoumnTable7" valign="top">За&shy;пи&shy;си в фор&shy;му&shy;ля&shy;ре долж&shy;ны про&shy;из&shy;во&shy;дить&shy;ся свое&shy;вре&shy;мен&shy;но со&shy;глас&shy;но пра&shy;ви&shy;лам, из&shy;ло&shy;жен&shy;ным в фор&shy;му&shy;ля&shy;ре ЦТ2.009.040 ФО</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка комплектности КПМ</td>
+    <td id="twoColoumnTable7" valign="top">Операторы №1 и №2</td>
+    <td id="threeColoumnTable7"></td>
+    <td id="oneColoumnTable7" valign="top">Ком&shy;плект&shy;ность КПМ долж&shy;на со&shy;от&shy;вет&shy;ство&shy;вать раз&shy;де&shy;лу «Ком&shy;плект&shy;ность» фор&shy;му&shy;ля&shy;ра ЦТ2.009.040 ФО</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Про&shy;вер&shy;ка тех&shy;ни&shy;че&shy;ско&shy;го со&shy;сто&shy;я&shy;ния кон&shy;троль&shy;но-из&shy;ме&shy;ри&shy;тель&shy;ных при&shy;бо&shy;ров и свое&shy;вре&shy;мен&shy;но&shy;сти их пе&shy;ри&shy;о&shy;ди&shy;че&shy;ских по&shy;ве&shy;рок.<p class='dline'>Проверяется: наличие, исправность <br>и чистота всего имущества, наличие клейм и пломб поверочных органов, установка нулей приборов по мето&shy;дике пункта <a href="#obslKontrIzm">&laquo;техническое обслужи&shy;вание контрольно-измерительных приборов&raquo;</a></p></td>
+    <td id="twoColoumnTable7" valign="top">Операторы №1 и №2</td>
+    <td id="threeColoumnTable7" valign="top">Внешний осмотр</td>
+    <td id="oneColoumnTable7" valign="top">Сро&shy;ки оче&shy;ред&shy;ной по&shy;вер&shy;ки не долж&shy;ны быть про&shy;сро&shy;че&shy;ны.<br>
+Стрел&shy;ки при&shy;бо&shy;ров долж&shy;ны быть уста&shy;нов&shy;ле&shy;ны на нуль.<br>
+На&shy;ли&shy;чие гря&shy;зи и ржав&shy;чи&shy;ны не&shy;до&shy;пу&shy;сти&shy;мо. При&shy;бо&shy;ры не долж&shy;ны иметь ме&shy;ха&shy;ни&shy;че&shy;ских по&shy;вре&shy;жде&shy;ний, вли&shy;я&shy;ю&shy;щих на их ра&shy;бо&shy;ту, напри&shy;мер, пло&shy;хое креп&shy;ле&shy;ние ру&shy;чек управ&shy;ле&shy;ния, по&shy;вре&shy;жде&shy;ние за&shy;жи&shy;мов, пло&shy;хая фик&shy;са&shy;ция пе&shy;ре&shy;клю&shy;ча&shy;те&shy;лей и т.п.</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Про&shy;вер&shy;ка со&shy;сто&shy;я&shy;ния и уком&shy;плек&shy;то&shy;ван&shy;но&shy;сти КПМ оди&shy;ноч&shy;ным ком&shy;плек&shy;том ЗИП. Про&shy;ве&shy;ря&shy;ет&shy;ся: на&shy;ли&shy;чие, ис&shy;прав&shy;ность и чи&shy;сто&shy;та ЗИП</td>
+    <td id="twoColoumnTable7" valign="top">Операторы №1 и №2</td>
+    <td id="threeColoumnTable7" valign="top">Внешний осмотр</td>
+    <td id="oneColoumnTable7" valign="top">Ком&shy;плект&shy;ность ЗИП долж&shy;на со&shy;от&shy;вет&shy;ство&shy;вать ве&shy;до&shy;мо&shy;сти ЗИП ЦТ2.009.040 ЗИ. ЗИП дол&shy;жен быть ис&shy;прав&shy;ным и чи&shy;стым</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Про&shy;вер&shy;ка тех&shy;ни&shy;че&shy;ско&shy;го со&shy;сто&shy;я&shy;ния ав&shy;то&shy;мо&shy;би&shy;ля КАМАЗ–5350 в со&shy;от&shy;вет&shy;ствии с ука&shy;за&shy;ни&shy;я&shy;ми ру&shy;ко&shy;вод&shy;ства по экс&shy;плу&shy;а&shy;та&shy;ции ав&shy;то&shy;мо&shy;би&shy;ля в объ&shy;е&shy;ме еже&shy;днев&shy;но&shy;го тех&shy;ни&shy;че&shy;ско&shy;го об&shy;слу&shy;жи&shy;ва&shy;ния в ос&shy;нов&shy;ной пе&shy;ри&shy;од экс&shy;плу&shy;а&shy;та&shy;ции</td>
+    <td id="twoColoumnTable7" valign="top">Водитель-электромеханик</td>
+    <td id="threeColoumnTable7" valign="top"></td>
+    <td id="oneColoumnTable7" valign="top">Тех&shy;ни&shy;че&shy;ское со&shy;сто&shy;я&shy;ние ав&shy;то&shy;мо&shy;би&shy;ля долж&shy;но от&shy;ве&shy;чать тре&shy;бо&shy;ва&shy;ни&shy;ям до&shy;ку&shy;мен&shy;та&shy;ции на авто&shy;мо&shy;биль</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка технического состояния кузова К5350.<p class='dline'>Про&shy;ве&shy;ря&shy;ет&shy;ся: внеш&shy;нее со&shy;сто&shy;я&shy;ние кузо&shy;ва и креп&shy;ле&shy;ние ку&shy;зо&shy;ва на ра&shy;ме шас&shy;си, со&shy;сто&shy;я&shy;ние ре&shy;зи&shy;но&shy;вых уплот&shy;ни&shy;те&shy;лей две&shy;рей, окон, кры&shy;шек лю&shy;ков, со&shy;сто&shy;я&shy;ние и креп&shy;ле&shy;ние на&shy;вес&shy;но&shy;го обо&shy;ру&shy;до&shy;ва&shy;ния ку&shy;зо&shy;ва</p></td>
+    <td id="twoColoumnTable7" valign="top">Водитель-электромеханик</td>
+    <td id="threeColoumnTable7" valign="top">Внешний осмотр</td>
+    <td id="oneColoumnTable7" valign="top">Ку&shy;зов и обо&shy;ру&shy;до&shy;ва&shy;ние в нем долж&shy;ны быть на&shy;деж&shy;но за&shy;креп&shy;ле&shy;ны. Две&shy;ри, ок&shy;на, крыш&shy;ки лю&shy;ков и ящи&shy;ков долж&shy;ны сво&shy;бод&shy;но от&shy;кры&shy;вать&shy;ся. Не долж&shy;но быть по&shy;вре&shy;жде&shy;ний ре&shy;зи&shy;но&shy;вых уплот&shy;ни&shy;те&shy;лей и об&shy;шив&shy;ки ку&shy;зо&shy;ва</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка технического состояния ФВУА и герметичности кузова.
+    <p class='dline'>Проверяется:</p>1) крепление агрегата, фильтра-поглотителя, щита контроля, крон&shy;штейнов; затяжка стяжных хомутов на рукавах;<br><br><p class='dline'>2) установка нуля на дифманометре-напоромере;</p><br><p class='dline'>3) производительность по методике пункта <a href="#CheckFVUA">«проверка производительно&shy;сти ФВУА»;</a><p class='dline'>4) под&shy;пор воз&shy;ду&shy;ха в ку&shy;зо&shy;ве по ме&shy;то&shy;ди&shy;ке пунк&shy;та <a href="#CheckSaelant">«про&shy;вер&shy;ка гер&shy;ме&shy;тич&shy;но&shy;сти ку&shy;зо&shy;ва»</a></p></td>
+    <td id="twoColoumnTable7" valign="top">Водитель-электромеханик</td>
+    <td id="threeColoumnTable7" valign="top"><br><br><br><p class='dline'>Внешний осмотр</p><br><br><br><br><p class='dline'>Отвертка ПШ 0,8х5,5х70</p><br><p class='dline'>Дифманометр-напоромер<br><br><p class='dline'>Дифманометр-напоромер</p></td>
+    <td id="oneColoumnTable7" valign="top"><br><br><br><p class='dline'>Болтовые и другие соединения должны быть плотно затянуты; должны отсутство&shy;вать пробоины и вмятины глубиной 8 мм <br>и более, повреждения маркировки лакокра&shy;сочного покрытия и ржавчина<br><p class='dline'>Стрелка дифманометра-напоромера должна быть на нулевом делении</p><br><p class='dline'>Производительность ФВУА должна быть не менее 75 м&sup3;/ч</p><br><p class='dline'>Подпор воздуха в кузове должен быть не менее 245 Па (25 кгс/м&sup2;)</p></td>               
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка со&shy;про&shy;тив&shy;ле&shy;ния изоляции по методике пункта <a href="#CheckResist">«проверка со&shy;про&shy;тив&shy;ле&shy;ния изоляции»</a></td>
+    <td id="twoColoumnTable7" valign="top">Командир</td>
+    <td id="threeColoumnTable7" valign="top">Мегаомметр Е6–16</td>
+    <td id="oneColoumnTable7" valign="top">Сопротивление изоляции ввода должно быть не менее 500 кОм, сопротивление изоляции силовых цепей должно быть не менее 1 МОм</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка работы защитно-отключа&shy;ющего устройства БПЗЭ по методике пункта <a href="#CheckBPZE">«проверка работы защитно-отключающего устройства БПЗЭ»</a></td>
+    <td id="twoColoumnTable7" valign="top">Оператор</td>
+    <td id="threeColoumnTable7" valign="top"></td>
+    <td id="oneColoumnTable7" valign="top">Автоматический выключатель сети на БПЗЭ должен отключиться</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Про&shy;вер&shy;ка ра&shy;бо&shy;то&shy;спо&shy;соб&shy;но&shy;сти уста&shy;нов&shy;ки ОВ95 по ме&shy;то&shy;ди&shy;ке пунк&shy;та «вклю&shy;че&shy;ние ото&shy;пи&shy;тель&shy;но-вен&shy;ти&shy;ля&shy;ци&shy;он&shy;ной уста&shy;нов&shy;ки» раз&shy;де&shy;ла «Ис&shy;поль&shy;зо&shy;ва&shy;ние КПМ»</a></td>
+    <td id="twoColoumnTable7" valign="top">Оператор</td>
+    <td id="threeColoumnTable7" valign="top"></td>
+    <td id="oneColoumnTable7" valign="top">Осве&shy;ще&shy;ние и све&shy;то&shy;мас&shy;ки&shy;ро&shy;воч&shy;ное устрой&shy;ство ку&shy;зо&shy;ва долж&shy;ны нор&shy;маль&shy;но функ&shy;ци&shy;о&shy;ни&shy;ро&shy;вать</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Про&shy;вер&shy;ка ра&shy;бо&shy;то&shy;спо&shy;соб&shy;но&shy;сти уста&shy;нов&shy;ки ОВ95 по ме&shy;то&shy;ди&shy;ке пунк&shy;та «вклю&shy;че&shy;ние ото&shy;пи&shy;тель&shy;но-вен&shy;ти&shy;ля&shy;ци&shy;он&shy;ной уста&shy;нов&shy;ки» раз&shy;де&shy;ла «Ис&shy;поль&shy;зо&shy;ва&shy;ние КПМ»</a></td>
+    <td id="twoColoumnTable7" valign="top">Водитель-электромеханик</td>
+    <td id="threeColoumnTable7" valign="top"></td>
+    <td id="oneColoumnTable7" valign="top">Уста&shy;нов&shy;ка ОВ95 долж&shy;на нор&shy;маль&shy;но функ&shy;ци&shy;о&shy;ни&shy;ро&shy;вать</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка технического состояния ЭУ
+    <p class='dline'>Проверяется:</p>1) внешнее состояние блока контро&shy;ля, блока управления и привода ге&shy;не&shy;ра&shy;то&shy;ра;<p class='dline'>2) надежность крепления генератора и редуктора к плите;</p><p class='dline'>3) установка нулей всех контрольно-измерительных приборов на панели блока контроля;</p><p class='dline'>4) тех&shy;ни&shy;че&shy;ское со&shy;сто&shy;я&shy;ние ге&shy;не&shy;ра&shy;то&shy;ра в со&shy;от&shy;вет&shy;ствии с тех&shy;ни&shy;че&shy;ским опи&shy;са&shy;ни&shy;ем и ин&shy;струк&shy;ци&shy;ей по экс&shy;плу&shy;а&shy;та&shy;ции ге&shy;не&shy;ра&shy;то&shy;ра в объ&shy;е&shy;ме про&shy;фи&shy;лак&shy;ти&shy;че&shy;ско&shy;го осмот&shy;ра ге&shy;не&shy;ра&shy;то&shy;ра (без про&shy;вер&shy;ки со&shy;про&shy;тив&shy;ле&shy;ния изо&shy;ля&shy;ции об&shy;мо&shy;ток);</p><p class='dline'>5) работоспособность ЭУ методом включения в работу;</p><br><p class='dline'>6) на&shy;пря&shy;же&shy;ние и ча&shy;сто&shy;та, вы&shy;ра&shy;ба&shy;ты&shy;ва&shy;е&shy;мые ЭУ, по по&shy;ка&shy;за&shy;ни&shy;ям вольт&shy;мет&shy;ра и ча&shy;сто&shy;то&shy;ме&shy;ра на па&shy;не&shy;ли бло&shy;ка кон&shy;тро&shy;ля</p></td>
+    <td id="twoColoumnTable7" valign="top">Водитель-электромеханик</td>
+    <td id="threeColoumnTable7" valign="top"><br><br><p class='dline'>Внешний осмотр</p><br><br><p class='dline'>Внешний осмотр</p><br><p class='dline'>Внешний осмотр</p></td>
+    <td id="oneColoumnTable7" valign="top"><br><br><p class='dline'>Не должно быть механических поврежде&shy;ний ЭУ, пыли, грязи, воды и масла</p><br><p class='dline'>Болты крепления генератора и редуктора должны быть надежно затянуты</p><p class='dline'>Стрел&shy;ки при&shy;бо&shy;ров бло&shy;ка кон&shy;тро&shy;ля при вы&shy;клю&shy;чен&shy;ной ЭУ долж&shy;ны на&shy;хо&shy;дить&shy;ся на ну&shy;ле&shy;вых от&shy;мет&shy;ках</p><p class='dline'>Тех&shy;ни&shy;че&shy;ское со&shy;сто&shy;я&shy;ние гене&shy;ра&shy;то&shy;ра долж&shy;но со&shy;от&shy;вет&shy;ство&shy;вать тре&shy;бо&shy;ва&shy;ни&shy;ям тех&shy;ни&shy;че&shy;ско&shy;го опи&shy;са&shy;ния и ин&shy;струк&shy;ции по экс&shy;плу&shy;а&shy;та&shy;ции гене&shy;ра&shy;то&shy;ра</p><br><br><p class='dline'>При работе ЭУ не должно быть необычных шумов (изменение высоты звука, скрежет, стуки)</p><br><p class='dline'>Напряжение должно быть в пределах (380±19) В при частоте (50±1) Гц</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка технического состояния прибора ИМД–21Б в соответствии <br>с указаниями технического описания <br>и инструкции по экс&shy;плу&shy;а&shy;та&shy;ции <br>ИМД–21Б (в объеме пункта 3.9)</td>
+    <td id="twoColoumnTable7" valign="top">Командир КПМ</td>
+    <td id="threeColoumnTable7" valign="top"></td>
+    <td id="oneColoumnTable7" valign="top">Техническое состояние прибора ИМД–21Б должно соответствовать требованиям технического описания и инструкции по экс&shy;плу&shy;а&shy;та&shy;ции ИМД–21Б</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка состояния соединителей. Проверяется: чистота и целостность соединителей</td>
+    <td id="twoColoumnTable7" valign="top">Расчет</td>
+    <td id="threeColoumnTable7" valign="top">Внешний осмотр</td>
+    <td id="oneColoumnTable7" valign="top">Не должно быть погнутых контактов, пыли, коррозии, влаги</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка технического состояния кондиционера 1К38–1 в соответствии с указаниями раздела «Проверка технического состояния» руково&shy;дства по экс&shy;плу&shy;а&shy;та&shy;ции кондицио&shy;нера</td>
+    <td id="twoColoumnTable7" valign="top">Водитель-электромеханик</td>
+    <td id="threeColoumnTable7" valign="top">Мегаомметр Е6-16, инструмент из ЗИП КПМ</td>
+    <td id="oneColoumnTable7" valign="top">Согласно требованиям руководства по экс&shy;плу&shy;а&shy;та&shy;ции на кондиционер</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка работоспособности электровентилятора включением в работу по методике пункта «включе&shy;ние электровентилятора» раздела «Использование КПМ»</td>
+    <td id="twoColoumnTable7" valign="top">Оператор</td>
+    <td id="threeColoumnTable7" valign="top"></td>
+    <td id="oneColoumnTable7" valign="top">Электровентилятор должен нормально функ&shy;ци&shy;о&shy;ни&shy;ро&shy;вать</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка функционирования радио&shy;станции Р–168–0,1УМ в соответствии с руководством по экс&shy;плу&shy;а&shy;та&shy;ции ра&shy;диостанции</td>
+    <td id="twoColoumnTable7" valign="top">Командир КПМ, операторы</td>
+    <td id="threeColoumnTable7" valign="top"></td>
+    <td id="oneColoumnTable7" valign="top">Согласно руководству по экс&shy;плу&shy;а&shy;та&shy;ции на радиостанцию</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Про&shy;вер&shy;ка средств сиг&shy;на&shy;ли&shy;за&shy;ции. Про&shy;ве&shy;ря&shy;ет&shy;ся функ&shy;ци&shy;о&shy;ни&shy;ро&shy;ва&shy;ние сиг&shy;на&shy;ли&shy;за&shy;ции на&shy;жа&shy;ти&shy;ем кноп&shy;ки СИГНАЛ ВО­ДИ­ТЕЛЮ на БПЗЭ</td>
+    <td id="twoColoumnTable7" valign="top">Оператор</td>
+    <td id="threeColoumnTable7" valign="top"></td>
+    <td id="oneColoumnTable7" valign="top">При нажатии кнопки СИГНАЛ ВОДИТЕЛЮ должен включиться сигнал в кабине ав&shy;то&shy;мо&shy;би&shy;ля</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Проверка технического состояния КПА<p class='dline'>Проверяется:</p>1) состояние всех блоков аппара&shy;туры;</p><p class='dline'><br><br><br><br><br><br><br>2) состояние штепсельных соедини&shy;телей;</p><br><br><p class='dline'>3) функционирование КПА 9В981 <br>в режиме «Самоконтроль» (режим «4») по методике соответствующего пункта раздела «Использование КПМ»</td>
+    <td id="twoColoumnTable7" valign="top">Командир КПМ, операторы</td>
+    <td id="threeColoumnTable7" valign="top"><br><br><br><p class='dline'>Внешний осмотр</p><br><br><br><br><br><br><br><p class='dline'>Внешний осмотр</p></td>
+    <td id="oneColoumnTable7" valign="top"><br><br><br><p class='dline'>Не до&shy;пус&shy;ка&shy;ет&shy;ся: на&shy;ли&shy;чие по&shy;гну&shy;то&shy;стей, вмя&shy;тин, ца&shy;ра&shy;пин на бло&shy;ках; на&shy;ру&shy;ше&shy;ния це&shy;лост&shy;но&shy;сти сиг&shy;наль&shy;ных фо&shy;на&shy;рей и ламп; не&shy;на&shy;деж&shy;но&shy;го креп&shy;ле&shy;ния и ра&shy;бо&shy;ты пе&shy;ре&shy;клю&shy;ча&shy;те&shy;лей и кно&shy;пок, про&shy;во&shy;ро&shy;та ру&shy;чек на осях пе&shy;ре&shy;клю&shy;ча&shy;те&shy;лей и за&shy;еда&shy;ния кно&shy;пок. Ап&shy;па&shy;ра&shy;ту&shy;ра долж&shy;на быть на&shy;деж&shy;но за&shy;креп&shy;ле&shy;на на сво&shy;их ра&shy;бо&shy;чих ме&shy;стах</p><p class='dline'>Не долж&shy;но быть: на&shy;ру&shy;ше&shy;ний це&shy;лост&shy;но&shy;сти штеп&shy;сель&shy;ных со&shy;еди&shy;ни&shy;те&shy;лей бло&shy;ков и ка&shy;бе&shy;лей, на&shy;ли&shy;чия на них пы&shy;ли, вла&shy;ги, кор&shy;ро&shy;зии и тре&shy;щин</p><p class='dline'>КПА должна нормально функционировать</p></td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable7" valign="top">Про&shy;вер&shy;ка тех&shy;ни&shy;че&shy;ско&shy;го со&shy;сто&shy;я&shy;ния па&shy;лат&shy;ки. Про&shy;ве&shy;ря&shy;ет&shy;ся на от&shy;сут&shy;ствие по&shy;вре&shy;жде&shy;ний и гря&shy;зи</td>
+    <td id="twoColoumnTable7" valign="top">Операторы №1 и №2</td>
+    <td id="threeColoumnTable7" valign="top">Внешний осмотр</td>
+    <td id="oneColoumnTable7" valign="top">Палатка должна быть сухой и чистой.<br>Не должно быть повреждений палатки</td>
+  </tr>
+
+</tbody>
+</table>
+
+
+
+<p id="CheckWork" class='titles'><b>Методики проверок работоспособности КПМ</b></p>
+
+<p id="CheckResist" class='firstsubtitles'>Проверка сопротивления изоляции</p>
+
+<p class="dline">Проверку сопротивления изоляции силовой цепи производить в следующей последовательности:</p>
+
+– отключить КПМ от источника питания (внешнего или автономного);<br>– проверить, что все органы управления электрооборудованием находятся в исходном выключенном положении;<br>– установить все выключатели на БПЗЭ в выключенное положение;<br>– установить переключатель на щитке переключения в нейтральное положение;<br>– извлечь с панели №1 тумбочки №2 мегаомметр Е6–16;<br>– вывернуть
+из БПЗЭ лампы ВВОД 220(380) В, СЕТЬ и ТРАНСФОРМАТОР;<br>– установить автоматический выключатель СЕТЬ на БПЗЭ в верхнее положение «1»;<br>– из&shy;ме&shy;рить ме&shy;га&shy;ом&shy;мет&shy;ром Е6–16 (5 под&shy;диа&shy;па&shy;зон) со&shy;про&shy;тив&shy;ле&shy;ние изо&shy;ля&shy;ции всех кон&shy;так&shy;тов со&shy;еди&shy;ни&shy;те&shy;ля ВВОД 380/220 В меж&shy;ду со&shy;бой и по от&shy;но&shy;ше&shy;нию к кор&shy;пу&shy;су со&shy;еди&shy;ни&shy;те&shy;ля; в лю&shy;бых кли&shy;ма&shy;ти&shy;че&shy;ских усло&shy;ви&shy;ях со&shy;про&shy;тив&shy;ле&shy;ние изо&shy;ля&shy;ции долж&shy;но быть не ме&shy;нее 500 кОм;<br>– проверить сопротивление изоляции между гнездами на колодках и розетках ~220 В 50 Гц и клеммой &laquo;&perp;&raquo;; сопротивление изо&shy;ля&shy;ции в любых климатических условиях должно быть не менее 1 МОм;<br>– ввернуть
+в БПЗЭ лампы.</p>
+
+<p class="dline">Для проверки сопротивления изоляции кабеля питания проделать следующее:</p>
+
+– извлечь из кабельного ящика в энергоотсеке кабель питания и уложить на пол КПМ;<br>– с помощью мегаомметра Е6–16 (5 поддиапазон) измерить сопротивление изоляции всех контактов соединителя кабеля между собой и по отношению к корпусу соединителя; в любых климатических условиях сопротивление изоляции должно быть не менее 1 МОм;<br>– уложить кабель питания в кабельный ящик в энергоотсеке;<br>– установить мегаомметр на штатное место в кузове.</p>
+
+
+<p id="CheckFVUA" class='subtitles'>Проверка производительности ФВУА</p>
+
+<p class="dline">Проверку производительности ФВУА проводить в следующей последовательности:</p>
+
+– установить вставку переключения на щите контроля ФВУА в положение ПРОИЗВОДИТЕЛЬНОСТЬ;<br>– открыть до отказа заглушку на
+выходном патрубке воздуховода ФВУА;<br>– открыть дверь кузова;<br>– подать напряжение на ФВУА с БПЗЭ;<br>– установить выключатель на щите контроля ФВУА в положение ВКЛ;<br>- определить с помощью дифманометра-напоромера и таблицы пересчета на щите контроля ФВУА производительность ФВУА, ко&shy;то&shy;рая должна быть не менее 75 м&sup3;/ч;<br>– выключить ФВУА и закрыть заглушку на выходном патрубке воздуховода до отказа.</p>
+
+<p id="CheckSaelant" class='subtitles'>Проверка герметичности кузова</p>
+
+<p>Проверку герметичности кузова проводить по результатам замера в нем величины подпора (из&shy;бы&shy;точ&shy;но&shy;го давления воздуха).</p>
+
+<p class="dline">Измерение величины подпора производить в следующем порядке:</p>
+
+– установить вставку переключения на щите контроля ФВУА в положение ПОДПОР;<br>– открыть до отказа заглушку на выходном патрубке воздуховода ФВУА;<br>– открыть клапан из&shy;бы&shy;точ&shy;но&shy;го давления до отказа;<br>– закрыть плотно двери, крышки люков, окна и крышку заборного патрубка отопителя установки ОВ95;<br>– подать напряжение на ФВУА с БПЗЭ;<br>– установить выключатель на щите
+контроля ФВУА в положение ВКЛ;<br>– определить с помощью дифманометра-напоромера подпор в кузове, который должен устанавливаться с помощью клапана избы&shy;точ&shy;но&shy;го давления в пределах 245–294 Па (25–30 кгс/м&sup2;);<br>– выключить ФВУА и закрыть до отказа заглушку на выходном патрубке воздуховода ФВУА.</p>
+
+<p id="CheckBPZE" class='subtitles'>Проверка работы защитно-отключающего устройства БПЗЭ</p>
+
+
+<p class="dline">Проверку работы защитно-отключающего устройства БПЗЭ производить в следующей последовательности:</p>
+
+– подключить КПМ к источнику питания 380 В 50 Гц;<br>– установить автоматический выключатель СЕТЬ на БПЗЭ в верхнее положение («1»), при этом загорится контрольная лампа СЕТЬ;<br>– нажать на кнопку ПРОВЕРКА ЗОУ;<br>– при исправной работе защитно-отключающего устройства ручка автоматического выключателя СЕТЬ установится в среднее положение, а контрольная лампа СЕТЬ погаснет.</p>
+
+<p id='TechSvidetel' class='titles'><b>Техническое освидетельствование</b></p>
+
+<p id="CheckMeasure" class='firstsubtitles'>Поверка средств измерений</p>
+
+<p>Контрольно-измерительные приборы КПМ подлежат поверке на точность показаний; перечень их приведен в таблице 8. Сроки
+поверки КИП должны быть совмещены со сроками проведения очередных технических обслуживаний КПМ.</p>
+
+<p class="dline">Поверку встроенных КИП на блоке контроля ЭУ и частотомера в кабине автомобиля производить после демонтажа их,
+для чего проделать следующее:</p>
+
+– вывернуть с помощью отвертки из ЗИП КПМ винты, крепящие панель блока контроля и панель с частотомером к кожуху в кабине;<br>– отсоединить от блока контроля и частотомера в кабине все подходящие к ним провода;<br>– с помощью ключа и отвертки из ЗИП КПМ вывернуть крепящие приборы винты с гайками;<br>– извлечь приборы из блока контроля и частотомер из кожуха в кабине автомобиля.</p>
+
+<p>Снятые приборы вместе с переносными контрольно-измерительными приборами из комплекта КПМ сдать поверяющим органам.</p>
+
+<p>После поверки установить все приборы на свои места. Монтаж встроенных приборов производить в порядке, обратном демонтажу.</p>
+
+<p>Результаты поверок должны быть занесены в формуляр КПМ в подраздел «Поверка средств измерений».</p>
+
+
+
+<p class="table855">Таблица 8</p>
+<table>
+<tbody>
+  <tr>
+    <th id="oneColoumnHead8" colspan='4'>Проверяемые приборы</th>
+    <th id="twoColoumnHead8" rowspan="2">Документ, на основании кото&shy;рого производится поверка</th>
+    <th id="threeColoumnHead8" colspan='3'>Поверочные средства</th>
+    <th id="fourColoumnHead8" rowspan="2">Где уста&shy;новлен</th>
+  </tr>
+  <tr>
+    <th id="oneColoumnInner8">Наименова&shy;ние</th>
+    <th id="twoColoumn8">Класс</th>
+    <th id="threeColoumn8">Преде&shy;лы из&shy;мерения</th>
+    <th id="fourColoumn8">Перио&shy;дичность про&shy;верки</th>
+    <th id="twoColoumn8">Наимено&shy;вание</th>
+    <th id="twoColoumn8">Класс</th>
+    <th id="threeColoumn8">Преде&shy;лы из&shy;мерения</th>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Дифманометр-напоро&shy;мер <br>ДНМП–100–М1</td>
+    <td id="twoColoumn8" valign="top">*</td>
+    <td id="threeColoumn8" valign="top">*</td>
+    <td id="fourColoumn8" valign="top">1 раз <br>в 3 года</td>
+    <td id="oneColoumn8" valign="top">Дифманометр-напоро&shy;мер ДНМП–100–М1. Руководство по экс&shy;плу&shy;а&shy;та&shy;ции</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">щит контроля ФВУА</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Частотомер Ц42307</td>
+    <td id="twoColoumn8" valign="top">1,0</td>
+    <td id="threeColoumn8" valign="top">45–55 Гц</td>
+    <td id="fourColoumn8" valign="top">1 раз <br>в 2 года</td>
+    <td id="oneColoumn8" valign="top">ГОСТ 8.497–83</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">блок контроля ЭУ</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Частотомер Ц42307</td>
+    <td id="twoColoumn8" valign="top">1,0</td>
+    <td id="threeColoumn8" valign="top">45–55 Гц</td>
+    <td id="fourColoumn8" valign="top">1 раз <br>в 2 года</td>
+    <td id="oneColoumn8" valign="top">ГОСТ 8.497–83</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">кабина автомобиля</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Мультиметр В7–64/1</td>
+    <td id="twoColoumn8" valign="top">*</td>
+    <td id="threeColoumn8" valign="top">*</td>
+    <td id="fourColoumn8" valign="top">1 раз в год</td>
+    <td id="oneColoumn8" valign="top">Мультиметр В7-64, <br>В7-64/1. Техническое опи­сание и инструкция по экс&shy;плу&shy;а&shy;та&shy;ции. Часть I
+КМСИ.411252.024 ТО</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">тумбочка №2,<br>панель №1</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Мультиметр В7–61</td>
+    <td id="twoColoumn8" valign="top">*</td>
+    <td id="threeColoumn8" valign="top">0,1 мВ–1000 В, 10 мкА–10 А постоян­ного тока;<br>1 мВ–750 В, 10 мкА–10 А переменного тока; 0,1 Ом–2 МОм</td>
+    <td id="fourColoumn8" valign="top">1 раз <br>в 3 года</td>
+    <td id="oneColoumn8" valign="top">ГОСТ 8.409–81<br>ГОСТ 8.497–83<br>Мультиметр В7-61. Техническое описание<br>и инструкция по <br>эксплуатации КМСИ.411252.016 ТО</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">тумбочка №2,<br>панель №1</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Частотомер эле­ктронно-счетный Ч3–88</td>
+    <td id="twoColoumn8" valign="top">*</td>
+    <td id="threeColoumn8" valign="top">*</td>
+    <td id="fourColoumn8" valign="top">1 раз в год</td>
+    <td id="oneColoumn8" valign="top">Частотомер эле­ктронно-счетный Ч3–88. <br>Методика поверки УШЯИ.411186.005 МП (МРБ МП.1601–2006)</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">тумбочка №2,<br>панель №2</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Вольтметр Э42700</td>
+    <td id="twoColoumn8" valign="top">2,5</td>
+    <td id="threeColoumn8" valign="top">0–500 В</td>
+    <td id="fourColoumn8" valign="top">1 раз <br>в 2 года</td>
+    <td id="oneColoumn8" valign="top">ГОСТ 8.497–83</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">блок контроля ЭУ</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Осциллограф цифровой С1–176</td>
+    <td id="twoColoumn8" valign="top">*</td>
+    <td id="threeColoumn8" valign="top">*</td>
+    <td id="fourColoumn8" valign="top">1 раз в год</td>
+    <td id="oneColoumn8" valign="top">Осциллограф цифровой С1–176.<br>Методика поверки УШЯИ.411161.051 МП (МРБ МП.2039–2010)</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">тумбочка №2,<br>панель №2</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Мегаомметр Е6016</td>
+    <td id="twoColoumn8" valign="top">&plusmn;15%</td>
+    <td id="threeColoumn8" valign="top">2 Ом–200 МОм</td>
+    <td id="fourColoumn8" valign="top">1 раз<br>в 3 года</td>
+    <td id="oneColoumn8" valign="top">ГОСТ 8.409–81<br>Мегаомметр Е6–16. Техническое описание<br>и инструкция по эксплуа­тации 2.722.011 ТО</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">тумбочка №2,<br>панель №1</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Измеритель мощности дозы ИМД–21Б</td>
+    <td id="twoColoumn8" valign="top">*</td>
+    <td id="threeColoumn8" valign="top">1–10000 Р/ч</td>
+    <td id="fourColoumn8" valign="top">1 раз<br>в 3 года</td>
+    <td id="oneColoumn8" valign="top">Измеритель мощности дозы ИМД–21Б. Техническое описание<br>и инструкция <br>по эксплуатации ЖШ1.287.702–05 ТО</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">на правой стенке кузо­ва и правом рабо­чем столе</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumn8" valign="top">Секундомер СОПпр–2а–2–010</td>
+    <td id="twoColoumn8" valign="top">&plusmn;1,0 с</td>
+    <td id="threeColoumn8" valign="top">0–60 с</td>
+    <td id="fourColoumn8" valign="top">1 раз в год</td>
+    <td id="oneColoumn8" valign="top">ГОСТ 8.423–81</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="twoColoumn8" valign="top">*&sup1;</td>
+    <td id="threeColoumn8" valign="top">*&sup1;</td>
+    <td id="fourColoumnHead8" valign="top">тумбочка №1,<br>ящик №3</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnTable8" colspan='9'><i>Примечания:</i>
+    <br>1 * Погрешность и пределы измерения в соответствии с формулярами (паспортами) или техническими описаниями на прибор.<br>2 *&sup1; Поверочные средства в соответствии с документами, указанными в графе «Документ, на основании которого производи­тся поверка».</td>
+  </tr>
+
+</tbody>
+</table>
+
+
+
+<p id="CheckExtinguisher" class='subtitles'>Техническое освидетельствование огнетушителя ОУ–3</p>
+
+<p>Периодической проверке не реже одного раза в год подлежит огнетушитель ОУ–3. Определяется масса заряда разностью между массой заряженного огнетушителя и массой пустого баллона (масса пустого баллона указана на корпусе запорного устройства). Масса заряда указана на этикетке или в паспорте огнетушителя.</p>
+
+<p>Через каждые 10 лет производится переосвидетельствование баллона.</p>
+
+<p>Данные о техническом освидетельствовании огнетушителя заносятся в подраздел «Техническое освидетельствование контроль&shy;ными органами» формуляра КПМ.</p>
+
+<p id="CheckProtection" class='subtitles'>Освидетельствование защитных средств</p>
+
+<p>Проверку защитных средств на электрическую прочность производить в соответствии с таблицей 9.</p>
+
+<p class="table570">Таблица 9</p>
+
+<table>
+<tbody>
+  <tr>
+    <th id="oneColoumnHead9">Наименование защитных средств</th>
+    <th id="twoColoumnHead9">Испытатель­ное напря­жение, кВ</th>
+    <th id="threeColoumnHead9">Продолжи­тельность, мин</th>
+    <th id="fourColoumnHead9">Ток утечки, мА</th>
+    <th id="fiveColoumnHead9">Периодичность проверки</th>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnHead9">Перчатки диэлектрические</td>
+    <td id="twoColoumnHead9">6</td>
+    <td id="threeColoumnHead9">1</td>
+    <td id="fourColoumnHead9">7</td>
+    <td id="fiveColoumnHead9">2 раза в год</td>
+  </tr>
+
+  <tr>
+    <td id="oneColoumnHead9">Монтерский инструмент<br>с изолирующими ручками</td>
+    <td id="twoColoumnHead9">3</td>
+    <td id="threeColoumnHead9">1</td>
+    <td id="fourColoumnHead9">—</td>
+    <td id="fiveColoumnHead9">2 раза в год</td>
+  </tr>
+
+  </tbody>
+  </table>
+
+<p>О про&shy;ве&shy;ден&shy;ном тех&shy;ни&shy;че&shy;ском осви&shy;де&shy;тель&shy;ство&shy;ва&shy;нии за&shy;щит&shy;ных средств про&shy;из&shy;во&shy;дит&shy;ся за&shy;пись в под&shy;раз&shy;дел «Тех&shy;ни&shy;че&shy;ское осви&shy;де&shy;тель&shy;ство&shy;ва&shy;ние кон&shy;троль&shy;ны&shy;ми ор&shy;га&shy;на&shy;ми» фор&shy;му&shy;ля&shy;ра КПМ.</p>
+
+<p id="MethodPassport" class='subtitles'>Порядок паспортизации КПМ по истечении гарантийного срока</p>
+
+<p>По истечении гарантийного срока работы КПМ ее техническое состояние должно быть проверено комиссией, назначенной коман&shy;диром части. Если техническое состояние КПМ обеспечивает ее нормальную работу и отвечает требованиям эксплуа&shy;тацион&shy;ной документации в объеме ТО–2, то дальнейшая работа КПМ может быть продлена сверх гарантийного срока не более, чем на 10%, после чего КПМ направляется в ремонт.</p>
+
+<p>Паспортизация КПА по истечении гарантийного срока осуществляется в соответствии с инструкцией по эксплуатации на нее.</p>
+
+<p id='Conservation' class='titles'><b>Консервация (расконсервация, переконсервация)</b></p>
+
+<p id="ConservationKPM" class='firstsubtitles'>Консервация КПМ</p>
+
+<p>Консервацию КПМ производить в помещении, имеющем температуру не ниже 288 К (+15 &deg;С) и относительную влажность воздуха не более 70%. </p>
+
+<p>Изделия, подвергаемые консервации, должны иметь температуру, равную температуре воздуха помещения или несколько <br>выше ее.</p>
+
+<p class="dline">Консервацию КПМ производить в следующей последовательности:</p>
+
+– подготовить консервационные материалы в соответствии с таблицей 6;<br>– очистить и подкрасить места, пораженные коррозией, в тон основной поверхности;<br>– тщательно очистить все элементы деталей механических соединений в КПМ от старой смазки при помощи чистой ветоши, смочен&shy;ной нефрасом;<br>– нанести тонкий слой пушечной смазки на детали механических соединений; 
+<p class="NB" align="center">ГНЕЗДА И ВИЛКИ СОЕДИНИТЕЛЕЙ СМАЗЫВАТЬ ЗАПРЕЩАЕТСЯ</p>
+
+<p><i>Примечание — При смазывании деталей механических соединений необходимо особое внимание обратить на предохранение резиновых, пластмассовых и окрашенных поверхностей от попадания смазки и масла.</i></p>
+
+– протереть насухо хромированные детали мягкой ветошью;<br>– покрыть смазкой Литол–24 или Лита неокрашенные металлические поверхности, резьбовые соединения, таблички кузова;<br>– нанести тонкий слой пушечной смазки на штыри заземления заземляющего устройства, кувалду и шанцевый инструмент, обер&shy;нуть их парафинированной бумагой, обвязать шпагатом и закрепить на штатных местах;<br>– нанести тонкий слой пушечной смазки на слесарный инструмент ЗИП, обернуть его парафинированной бумагой и уложить на
+штатные места;<br>– нанести тонкий слой пушечной смазки на винт кресла оператора и на гайку крепления кресла по-походному. Закрепить кресло по-походному, винт кресла обернуть парафинированной бумагой и обвязать шпагатом;<br>– положить парафинированную бумагу под крышки люков и багажного ящика;<br>– нанести тонкий слой пушечной смазки на металлические части панелей, столешниц, направляющие в тумбочках;<br>– протереть ветошью, смоченной нефрасом С3–80/120, составные части радиостанции, поместить их в полиэтиленовые чехлы, чехлы запаять, предварительно вложить внутрь мешочки с силикагелем (0,1 кг) и уложить на штатное место;<br>– огнетушители, БКСО, аккумуляторные батареи автомобиля и радиостанции снять со штатных мест и отправить на хранение в спе&shy;ци&shy;аль&shy;но приспособленные для этого помещения;<br>– извлечь из энергоотсека чехлы с кольями палатки, достать колья палатки из чехлов, смазать пушечной смазкой неокрашенные части кольев, обернуть парафинированной бумагой и обвязать шпагатом, уложить на штатное место;<br>– извлечь из ящика в энергоотсеке кабели КПМ, смазать резьбовые части соединителей смазкой ЦИАТИМ&ndash;201, завернуть заглушки, обернуть парафинированной бумагой и обвязать шпагатом;<br>– протереть кабели чистой тканью с тальком и уложить на штатное место;<br>– мелкий ЗИП протереть салфетками для удаления следов грязи, жировых пятен, обернуть парафинированной бумагой, уло&shy;жить в полиэтиленовые пакеты, края пакетов запаять;<br>– за&shy;крыть свер&shy;ху па&shy;не&shy;ли и ящи&shy;ки в тум&shy;боч&shy;ках по&shy;ли&shy;эти&shy;ле&shy;но&shy;вой плен&shy;кой, пред&shy;ва&shy;ри&shy;тель&shy;но вло&shy;жив в них ме&shy;шоч&shy;ки из хлоп&shy;ча&shy;то&shy;бумаж&shy;ной тка&shy;ни с си&shy;ли&shy;ка&shy;ге&shy;лем (мас&shy;са ме&shy;шоч&shy;ка с си&shy;ли&shy;ка&shy;ге&shy;лем не долж&shy;на пре&shy;вы&shy;шать 400 г). Ме&shy;шоч&shy;ки не долж&shy;ны ка&shy;сать&shy;ся по&shy;верх&shy;но&shy;стей кон&shy;сер&shy;ви&shy;ру&shy;е&shy;мых из&shy;де&shy;лий, в про&shy;тив&shy;ном слу&shy;чае под&shy;ло&shy;жить под ме&shy;шоч&shy;ки па&shy;ра&shy;фи&shy;ни&shy;ро&shy;ван&shy;ную бу&shy;ма&shy;гу;<br>– после этого ящики обклеить полиэтиленовой лентой с липким слоем;<br>– вылить воду из термосов, просушить их, завернуть крышки;<br>– смазать пушечной смазкой металлические части электровентилятора, светильников, обернуть парафинированной бумагой и об&shy;вязать шпагатом;<br>– снять с места крепления запасное колесо, тщательно обмыть резину водой, высушить и поместить колесо внутрь кузова;<br>– нанести тонкий слой пушечной смазки на шпильки и гайки, крепящие колесо, на посадочные места приспособлений для креп&shy;ления колеса и трапов, обернуть парафинированной бумагой, закрепить конец бумаги полиэтиленовой лентой с липким слоем;<br>– произвести консервацию электроустановки, для чего проделать следующее:</p>
+
+<ul>
+  <li>смазать пушечной смазкой все металлические части электроустановки, незащищенные от коррозии (контактные кольца не смазывать);<li>удалить следы коррозии и подкрасить места повреждения окраски на корпусе генератора, блока управления, блока кон&shy;тро&shy;ля и щитка переключения;<li>подготовить к хранению и произвести консервацию генератора в соответствии с требованиями его технического описания и инструкции по эксплуатации;<li>произвести консервацию КПА, КИП, кондиционера, ФВУА, ОВ95, прибора ИМД–21Б, автомобиля КАМАЗ согласно их руко­водствам (инструкциям) по эксплуатации;<li>закрыть стекла окон и резиновые профили парафинированной бумагой, закрепить полиэтиленовой лентой с липким слоем.
+</ul>
+
+<p>После консервации произвести пломбирование КПМ согласно указаниям пункта «пломбирование КПМ» раздела «Описание <br>и работа».</p>
+
+<p id="DegreasingKPM" class='subtitles'>Расконсервация КПМ</p>
+
+<p class="dline">Расконсервацию КПМ производить в следующей последовательности:</p>
+
+– распломбировать КПМ;<br>– снять парафинированную бумагу с окон и промыть стекла;<br>– снять парафинированную бумага с деталей механических соединений, удалить консервационную смазку;<br>– удалить ветошью консервационную смазку с законсервированных поверхностей внутри и снаружи кузова КПМ;<br>– протереть салфеткой, смоченной нефрасом места консервации, после чего протереть их насухо чистой ветошью;<br>– произвести расконсервацию автомобиля, ФВУА, ОВ95, генератора, кондиционера, прибора ИМД–21Б, КПА и КИП согласно их руководствам (инструкциям) по эксплуатации;<br>– получить огнетушители, БКСО, батареи радиостанции и заряженные аккумуляторные батареи автомобиля и установить их на пред&shy;на&shy;зна&shy;чен&shy;ные им в КПМ места;<br>– извлечь из кузова запасное колесо и закрепить его на задней стенке кузова снаружи;<br>– по мере необходимости произвести расконсервацию ЗИП КПМ и ее составных частей.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</div>
+</div>
+</div>
+</body>
+</html>

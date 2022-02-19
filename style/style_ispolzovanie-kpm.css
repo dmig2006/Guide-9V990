@@ -1,0 +1,59 @@
+  table {
+    margin-top: 0px; /* Отступ сверху */
+    margin-bottom: 50px; /* Отступ снизу */
+    margin-left: 50px; /* Отступ слева */
+    margin-right: 20px; /* Отступ справа */
+    /*width: 700px;  Ширина таблицы */
+    background: #000; /* Цвет фона таблицы */
+    color: #000; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+   }
+   td, th {
+    text-align: center;
+    /* width: 300px; */
+    background: #FFF; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }   
+
+
+   #oneColoumn{
+      width: 200px;
+    }
+   #twoColoumn{
+      width: 300px;
+   }
+   #threeColoumn{
+      width: 270px;
+   }
+
+   #oneColoumn2{
+      width: 147px;
+    }
+   #twoColoumn2{
+      width: 150px;
+   }
+   /* #threeColoumn2{
+      width: 150px;
+   }
+   #fourColoumn2{
+      width: 150px;
+   }
+   #fiveColoumn2{
+      width: 150px;
+   } */
+
+
+   
+
+
+ 
+ 
+
+  
+
+  
+   
+
+   
+
+ 

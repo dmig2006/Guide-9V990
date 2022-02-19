@@ -1,0 +1,76 @@
+    table {
+    margin-top: 0px; /* Отступ сверху */
+    margin-bottom: 50px; /* Отступ снизу */
+    margin-left: 35px; /* Отступ слева */
+    margin-right: 35px; /* Отступ справа */
+    /*width: 700px;  Ширина таблицы */
+    background: #000; /* Цвет фона таблицы */
+    color: #000; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+   }
+   td, th {
+    text-align: center;
+    /* width: 300px; */
+    background: #FFF; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+
+
+   #oneColoumn{
+      width: 320px;
+      
+    }
+   #twoColoumn{
+      width: 250px;
+   }
+   #threeColoumn{
+      width: 180px;
+   }
+
+   #oneColoumnInner{
+      text-align: left;
+    }
+   #threeColoumnTemp{
+      text-align: left;
+   }
+   
+
+   #oneColoumnTable2{
+      text-align: center;
+      width: 200px;
+    }
+
+   #twoColoumnTable2{
+      text-align: left;
+      width: 390px;
+   }
+
+   #threeColoumnTable2{
+      text-align: center;
+      width: 200px;
+   }
+
+  #twoColoumnHeadTable2{
+      text-align: center;
+      width: 390px;
+   }
+
+   #tehnicheskieHar, #naznachenieKPM, #UstroystvoKPM, #markirovka, #ZIPAndShancevii, #sostavKPM{
+    font-size:24px; 
+    font-style:medium;
+   }
+
+   #ObshieSvedUstr, #Electropitanie, #RabotaKPM, #ShassyKAMAZ, #KuzovK5350, #IstochnicPit, #ContrProvAp, #ContrIzmPrib, 
+   #SredstvaSvyazi, #OborudNormFunct, #VspomOborud, #MarkirovkaKPM, #Plomba {
+    font-size:18px; 
+    font-style:italic;
+    font-weight: Medium;
+    color: #B17A59;
+   }
+
+   #BlocPitElectr, #Electroust, #Radiostan, #SignalVoditelu, #Svetomask, #Conditioner, #OtopitVent, #FVUA, #IMD, #Electrovent, #Termos, #BKSO, #Ognetush, #Palatka, #Stol, #KresloStul, #Yashic, #Cronstein, #SpalMesto{
+    font-size:16px; 
+    font-weight: bold;
+   }
+ 
+  

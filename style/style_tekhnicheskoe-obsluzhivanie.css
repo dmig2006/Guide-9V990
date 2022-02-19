@@ -1,0 +1,185 @@
+table {
+    /* margin: 20px auto; */
+    /*width: 700px;  Ширина таблицы */
+    margin-top: 0px; /* Отступ сверху */
+    margin-bottom: 30px; /* Отступ снизу */
+    
+    margin-right: auto; /* Выравниваем таблицу по центру окна */
+    margin-left: auto; /* Выравниваем таблицу по центру окна */
+    background: #000; /* Цвет фона таблицы */
+    color: #000; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+   }
+   td, th {
+    text-align: center;
+    background: #FFF; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+
+
+   #oneColoumn{
+      width: 350px;
+    }
+   #twoColoumn{
+      width: 70px;
+   }
+   #threeColoumn{
+      width: 70px;
+   }
+   #fourColoumn{
+      width: 70px;
+   }
+   #fiveColoumn{
+      width: 70px;
+   }
+   #sixColoumn{
+      width: 70px;
+   }
+   #sevenColoumn{
+      width: 70px;
+   }
+   #eightColoumn{
+      width: 70px;
+   }
+   #nineColoumn{
+      width: 70px;
+   }
+
+
+   #oneColoumnTable5{
+      text-align: left;
+      width: 315px;
+    }
+
+
+
+   #oneColoumnHeadTable6{
+      text-align: center;
+      width: 435px;      
+    }
+
+   #oneColoumnTable6{
+      text-align: left;
+    }
+
+   #twoColoumnHeadTable6{
+      text-align: center;
+      width: 280px;
+   }
+
+
+
+   #oneColoumnHeadTable7{
+      text-align: center;
+      width: 270px;      
+    }
+
+   #oneColoumnTable7{
+      text-align: left;      
+    }
+
+   #twoColoumnTable7{
+      text-align: center;
+      width: 100px; 
+    }
+
+   #threeColoumnTable7{
+      text-align: center;
+      width: 170px; 
+    }
+
+   #fourColoumnHeadTable7{
+      text-align: center;
+      width: 315px;
+   }
+
+
+
+
+   #oneColoumnHead8{
+      text-align: center;
+      width: 370px;
+   }
+
+   #oneColoumnTable8{
+      text-align: left;
+    }
+
+   #twoColoumnHead8{
+      text-align: center;
+      width: 210px;
+   }
+
+   #threeColoumnHead8{
+      text-align: center;
+      width: 180px;
+   }
+
+   #fourColoumnHead8{
+      text-align: center;
+      width: 115px;
+   }
+
+   #oneColoumnInner8{
+      text-align: center;
+      width: 225px;
+   }
+
+   #oneColoumn8{
+      text-align: left;
+      width: 225px;
+   }
+
+   #twoColoumn8{
+      text-align: center;
+      width: 50px;
+   }
+
+   #threeColoumn8{
+      text-align: center;
+      width: 55px;
+   }
+
+   #fourColoumn8{
+      text-align: center;
+      width: 60px;
+   }
+
+
+
+   #oneColoumnHead9{
+      text-align: center;
+      width: 200px;
+   }
+
+   #twoColoumnHead9{
+      text-align: center;
+      width: 90px;
+   }
+
+   #threeColoumnHead9{
+      text-align: center;
+      width: 90px;
+   }
+
+   #fourColoumnHead9{
+      text-align: center;
+      width: 60px;
+   }
+
+   #fiveColoumnHead9{
+      text-align: center;
+      width: 130px;
+   }
+
+   
+
+
+
+
+
+
+
+  
+ 
+  
